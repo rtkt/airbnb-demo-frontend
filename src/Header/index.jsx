@@ -4,7 +4,7 @@ import { Box } from '../common';
 import SearchField from '../SearchField/';
 import logo from './logo.svg';
 
-const barHeight = 80;
+const height = 80;
 const links = {
   host: 'host',
   help: 'help',
@@ -14,9 +14,9 @@ const links = {
 
 const Container = styled.header`
   box-shadow: 0px 0.5px 0px rgba(72, 72, 72, 0.3);
-  height: ${barHeight}px;
+  height: ${height}px;
   left: 0;
-  line-height: ${barHeight}px;
+  line-height: ${height}px;
   position: fixed;
   right: 0;
   top: 0;
