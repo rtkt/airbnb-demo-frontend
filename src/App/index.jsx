@@ -1,9 +1,8 @@
 import React from 'react';
+import Header from '../Header/';
 
 const App = function () {
-  return (
-    <h1>test</h1>
-  );
+  return <Header />;
 };
 
 export default App;
