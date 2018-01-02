@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Box } from '../common';
 import logo from './logo.svg';
 import searchIcon from './search.svg';
 
@@ -20,10 +21,6 @@ const Container = styled.header`
   position: fixed;
   right: 0;
   top: 0;
-`;
-
-const Box = styled.div`
-  position: relative;
 `;
 
 const Logo = styled.img`
