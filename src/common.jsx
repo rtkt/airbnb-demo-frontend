@@ -5,3 +5,9 @@ import styled from 'styled-components';
 export const Box = styled.div`
   position: relative;
 `;
+
+export const H1 = styled.h1`
+  font-family: 'Circular Bold';
+  font-size: 32px;
+  margin-bottom: 24px;
+`;
