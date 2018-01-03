@@ -32,7 +32,7 @@ const Header = function () {
           <SearchField />
         </div>
         <div className="col-lg-4 col-lg-offset-2">
-          <NavLinks />
+          <NavLinks height={height} />
         </div>
       </div>
     </Container>
