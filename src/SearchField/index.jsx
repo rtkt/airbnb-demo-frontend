@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Box } from '../common';
 import searchIcon from './search.svg';
 
 const height = 48;
@@ -14,7 +14,6 @@ const Input = styled.input`
   left: 0;
   padding-left: 53px;
   position: absolute;
-  top: 16px;
   width: 100%;
 `;
 
@@ -22,15 +21,31 @@ const Icon = styled.img`
   display: inline-block;
   left: 16px;
   position: absolute;
-  top: 29px;
+  top: 13px;
 `;
 
-const SearchField = function () {
+const SearchBox = styled.div`
+  height: ${height};
+  margin-top: ${props => (props.height - height) / 2}px;
+  position: relative;
+`;
+
+SearchBox.defaultProps = {
+  height: 80,
+};
+
+SearchBox.propTypes = {
+  height: PropTypes.number,
+};
+
+const SearchField = function (props) {
   return (
-    <Box>
+    /* eslint-disable react/prop-types */
+    <SearchBox height={props.height}>
+      {/* eslint-enable react/prop-types */}
       <Input type="text" name="location" placeholder="Try &quot;Miami&quot;" />
       <Icon src={searchIcon} alt="Search icon" title="Search icon" />
-    </Box>
+    </SearchBox>
   );
 };
 

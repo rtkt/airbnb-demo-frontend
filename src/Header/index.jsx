@@ -29,7 +29,7 @@ const Header = function () {
           <Logo src={logo} alt="Logo" title="Logo" />
         </div>
         <div className="col-lg-5">
-          <SearchField />
+          <SearchField height={height} />
         </div>
         <div className="col-lg-4 col-lg-offset-2">
           <NavLinks height={height} />
