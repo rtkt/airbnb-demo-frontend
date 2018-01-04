@@ -2,38 +2,35 @@ import React from 'react';
 import styled from 'styled-components';
 import searchIcon from './search.svg';
 
-const height = 48;
-
-const Input = styled.input`
-  border: 1px solid rgba(72, 72, 72, 0.2);
+const SearchBox = styled.form`
+  align-items: center;
+  border: solid 1px rgba(72, 72, 72, 0.2);
   border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
-  height: ${height}px;
-  left: 0;
-  padding-left: 53px;
-  position: absolute;
-  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(72, 72, 72, 0.08);
+  display: flex;
+  margin-top: 16px;
+  padding: 12px 0 12px 16px;
 `;
 
 const Icon = styled.img`
-  display: inline-block;
-  left: 16px;
-  position: absolute;
-  top: 13px;
+  display: block;
 `;
 
-const SearchBox = styled.div`
-  height: ${height};
-  margin-top: ${props => (props.height - height) / 2}px;
-  position: relative;
+const Input = styled.input`
+  border: 0;
+  color: #383838;
+  display: block;
+  font-family: 'Circular';
+  font-size: 16px;
+  padding: 0;
+  padding-left: 16px;
 `;
 
-const SearchField = function searchField(props) {
+const SearchField = function searchField() {
   return (
-    <SearchBox height={props.height}>
-      <Input type="text" name="location" placeholder="Try &quot;Miami&quot;" />
+    <SearchBox>
       <Icon src={searchIcon} alt="Search icon" title="Search icon" />
+      <Input type="text" name="location" placeholder="Try &quot;Miami&quot;" />
     </SearchBox>
   );
 };
