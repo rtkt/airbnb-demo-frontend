@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Box } from './common';
 
 const lineHeight = 24;
 
@@ -11,6 +10,10 @@ const links = {
   sign_up: 'sign-up',
   log_in: 'log-in',
 };
+
+const Box = styled.div`
+  position: relative;
+`;
 
 const Link = styled.a`
   color: #383838;
