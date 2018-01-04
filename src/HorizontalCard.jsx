@@ -37,7 +37,7 @@ const Text = styled.span`
 const HorizontalCard = function horizontalCard(props) {
   return (
     <Container>
-      <CardLink color={props.color} deLink href={props.href} title={props.linkTitle}>
+      <CardLink href={props.href} title={props.linkTitle}>
         <img src={props.img} alt={props.text} title={props.text} />
         <Text>{props.text}</Text>
       </CardLink>
