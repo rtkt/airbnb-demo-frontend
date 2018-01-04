@@ -6,6 +6,10 @@ import explorePhoto2 from './imgs/explorePhoto-2.png';
 import explorePhoto3 from './imgs/explorePhoto-3.png';
 import morePic from './imgs/seeAllButton.svg';
 
+const linkOpts = {
+  color: '#383838',
+};
+
 const Container = styled.main`
   margin-top: 128px;
 `;
@@ -33,6 +37,17 @@ const MoreButton = styled.img`
 
 const Section = styled.section`
   margin-top: 48px;
+`;
+
+const SeeAllLink = styled.a`
+  color: ${linkOpts.color};
+  text-decoration: none;
+  &:link {
+    color: ${linkOpts.color};
+  }
+  &:hover {
+    color: ${linkOpts.color};
+  }
 `;
 
 const ExploreRow = function exploreRow() {
@@ -71,8 +86,10 @@ const Heading = function heading(props) {
 const More = function more() {
   return (
     <MoreContainer>
-      <span>See all</span>
-      <MoreButton src={morePic} alt="See all" title="See all" />
+      <SeeAllLink href="#" title="See all">
+        <span>See all</span>
+        <MoreButton src={morePic} alt="See all" title="See all" />
+      </SeeAllLink>
     </MoreContainer>
   );
 };
