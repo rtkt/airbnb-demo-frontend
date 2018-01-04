@@ -34,13 +34,25 @@ const ExploreRow = function exploreRow() {
   return (
     <div className="row">
       <div className="col-lg-4">
-        <HorizontalCard img={explorePhoto1} text="Homes" />
+        <HorizontalCard color="black" href="#" img={explorePhoto1} linkTitle="Homes" text="Homes" />
       </div>
       <div className="col-lg-4">
-        <HorizontalCard img={explorePhoto2} text="Experiences" />
+        <HorizontalCard
+          color="black"
+          href="#"
+          img={explorePhoto2}
+          linkTitle="Experiences"
+          text="Experiences"
+        />
       </div>
       <div className="col-lg-4">
-        <HorizontalCard img={explorePhoto3} text="Restaurants" />
+        <HorizontalCard
+          color="black"
+          href="#"
+          img={explorePhoto3}
+          linkTitle="Restaurants"
+          text="Restaurants"
+        />
       </div>
     </div>
   );

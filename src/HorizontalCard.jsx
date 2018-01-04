@@ -1,6 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const linkOpts = {
+  color: '#383838',
+  fontWeight: 'bold',
+};
+
+const CardLink = styled.a`
+  color: ${linkOpts.color};
+  font-weight: ${linkOpts.fontWeight};
+  &:link {
+    color: ${linkOpts.color};
+    font-weight: ${linkOpts.fontWeight};
+  }
+  &:hover {
+    color: ${linkOpts.color};
+    font-weight: ${linkOpts.fontWeight};
+  }
+`;
+
 const Container = styled.div`
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 4px;
@@ -28,8 +46,10 @@ const Img = styled.img`
 const HorizontalCard = function horizontalCard(props) {
   return (
     <Container>
-      <Img src={props.img} alt={props.text} title={props.text} />
-      <Text>{props.text}</Text>
+      <CardLink color={props.color} deLink href={props.href} title={props.linkTitle}>
+        <Img src={props.img} alt={props.text} title={props.text} />
+        <Text>{props.text}</Text>
+      </CardLink>
     </Container>
   );
 };
