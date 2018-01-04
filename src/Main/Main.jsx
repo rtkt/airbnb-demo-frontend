@@ -12,6 +12,7 @@ const Container = styled.main`
 `;
 
 const Section = styled.section`
+  margin-top: 48px;
   position: relative;
 `;
 
