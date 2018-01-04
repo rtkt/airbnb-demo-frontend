@@ -11,24 +11,23 @@ const Container = styled.main`
   margin-top: 128px;
 `;
 
-const Section = styled.section`
-  margin-top: 48px;
-  position: relative;
+const HeadingWrapper = styled.div`
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const MoreContainer = styled.div`
   color: #383838;
   font-size: 14px;
-  line-height: 24px;
-  position: absolute;
-  right: 22px;
-  top: 10px;
-  width: 72px;
 `;
 
 const MoreButton = styled.img`
   margin-left: 8px;
-  vertical-align: middle;
+`;
+
+const Section = styled.section`
+  margin-top: 48px;
 `;
 
 const ExploreRow = function exploreRow() {
@@ -55,6 +54,15 @@ const ExperiencesRow = function experiencesRow() {
   );
 };
 
+const Heading = function heading(props) {
+  return (
+    <HeadingWrapper>
+      <H1>{props.text}</H1>
+      <More />
+    </HeadingWrapper>
+  );
+};
+
 const More = function more() {
   return (
     <MoreContainer>
@@ -73,8 +81,7 @@ const Main = function main() {
           <ExploreRow />
         </Section>
         <Section>
-          <H1>Experiences</H1>
-          <More />
+          <Heading text="Experiences" />
           <ExperiencesRow />
         </Section>
       </div>
