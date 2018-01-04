@@ -37,13 +37,9 @@ const HorizontalCard = function (props) {
   );
 };
 
-// HorizontalCard.defaultProps = {
-
-// };
-
 HorizontalCard.propTypes = {
-  img: PropTypes.string,
-  text: PropTypes.string,
+  img: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default HorizontalCard;
