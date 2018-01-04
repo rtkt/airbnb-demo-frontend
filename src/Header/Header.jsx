@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchField from '../SearchField/';
+import SearchField from '../SearchField/SearchField';
 import NavLinks from '../NavLinks';
 import logo from './logo.svg';
 
