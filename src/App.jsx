@@ -3,7 +3,12 @@ import Header from './Header/Header';
 import Main from './Main/Main';
 
 const App = function app() {
-  return [<Header key="header" />, <Main key="main" />];
+  return (
+    <React.Fragment>
+      <Header key="header" />
+      <Main key="main" />
+    </React.Fragment>
+  );
 };
 
 export default App;
