@@ -32,7 +32,7 @@ const MoreButton = styled.img`
   vertical-align: middle;
 `;
 
-const ExploreRow = function () {
+const ExploreRow = function exploreRow() {
   return (
     <div className="row">
       <div className="col-lg-4">
@@ -48,7 +48,7 @@ const ExploreRow = function () {
   );
 };
 
-const ExperiencesRow = function () {
+const ExperiencesRow = function experiencesRow() {
   return (
     <div className="row">
       <p>test</p>
@@ -56,7 +56,7 @@ const ExperiencesRow = function () {
   );
 };
 
-const More = function () {
+const More = function more() {
   return (
     <MoreContainer>
       <span>See all</span>
@@ -65,7 +65,7 @@ const More = function () {
   );
 };
 
-const Main = function () {
+const Main = function main() {
   return (
     <Container>
       <div className="container">

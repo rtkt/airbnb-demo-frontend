@@ -28,7 +28,7 @@ const Img = styled.img`
   width: 96px;
 `;
 
-const HorizontalCard = function (props) {
+const HorizontalCard = function horizontalCard(props) {
   return (
     <Container>
       <Img src={props.img} alt={props.text} title={props.text} />

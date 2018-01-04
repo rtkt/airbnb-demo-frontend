@@ -21,7 +21,7 @@ const Logo = styled.img`
   vertical-align: middle;
 `;
 
-const Header = function () {
+const Header = function header() {
   return (
     <Container>
       <div className="container">

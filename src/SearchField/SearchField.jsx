@@ -38,7 +38,7 @@ SearchBox.propTypes = {
   height: PropTypes.number,
 };
 
-const SearchField = function (props) {
+const SearchField = function searchField(props) {
   return (
     /* eslint-disable react/prop-types */
     <SearchBox height={props.height}>

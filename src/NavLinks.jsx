@@ -23,7 +23,7 @@ const Link = styled.a`
   vertical-align: middle;
 `;
 
-const NavLinks = function (props) {
+const NavLinks = function navLinks(props) {
   return (
     <Box>
       {/* eslint-disable jsx-a11y/anchor-is-valid */}

@@ -7,7 +7,7 @@ const Container = styled.section`
   margin-top: ${props => props.marginTop}px;
 `;
 
-const MainSection = function (props) {
+const MainSection = function mainSection(props) {
   return (
     <Container>
       <H1>{props.heading}</H1>
