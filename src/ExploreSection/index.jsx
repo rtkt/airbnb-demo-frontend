@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const ExploreSection = function (props) {
   return (
-    <Container className="container-fluid">
+    <Container>
       <H1>{props.heading}</H1>
       <div className="row">
         <HorizontalCard img={photo1} text="Homes" />

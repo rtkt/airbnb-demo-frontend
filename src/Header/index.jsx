@@ -23,16 +23,18 @@ const Logo = styled.img`
 
 const Header = function () {
   return (
-    <Container className="container-fluid">
-      <div className="row">
-        <div className="col-lg-1">
-          <Logo src={logo} alt="Logo" title="Logo" />
-        </div>
-        <div className="col-lg-5">
-          <SearchField height={height} />
-        </div>
-        <div className="col-lg-4 col-lg-offset-2">
-          <NavLinks height={height} />
+    <Container>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-1">
+            <Logo src={logo} alt="Logo" title="Logo" />
+          </div>
+          <div className="col-lg-5">
+            <SearchField height={height} />
+          </div>
+          <div className="col-lg-4 col-lg-offset-2">
+            <NavLinks height={height} />
+          </div>
         </div>
       </div>
     </Container>
