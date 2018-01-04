@@ -4,13 +4,6 @@ import styled from 'styled-components';
 
 const lineHeight = 24;
 
-const links = {
-  host: 'host',
-  help: 'help',
-  sign_up: 'sign-up',
-  log_in: 'log-in',
-};
-
 const Box = styled.div`
   position: relative;
 `;
@@ -33,18 +26,20 @@ const Link = styled.a`
 const NavLinks = function (props) {
   return (
     <Box>
-      <Link href={links.host} title="Become a host" height={props.height} right="192px">
+      {/* eslint-disable jsx-a11y/anchor-is-valid */}
+      <Link href="#" title="Become a host" height={props.height} right="192px">
         Become a host
       </Link>
-      <Link href={links.help} title="Help" height={props.height} right="136px">
+      <Link href="#" title="Help" height={props.height} right="136px">
         Help
       </Link>
-      <Link href={links.sign_up} title="Sign up" height={props.height} right="72px">
+      <Link href="#" title="Sign up" height={props.height} right="72px">
         Sign up
       </Link>
-      <Link href={links.log_in} title="Log in" height={props.height} right="8px">
+      <Link href="#" title="Log in" height={props.height} right="8px">
         Log in
       </Link>
+      {/* eslint-enable jsx-a11y/anchor-is-valid */}
     </Box>
   );
 };
