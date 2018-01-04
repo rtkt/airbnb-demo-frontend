@@ -16,9 +16,15 @@ const ExploreSection = function (props) {
     <Container>
       <H1>{props.heading}</H1>
       <div className="row">
-        <HorizontalCard img={photo1} text="Homes" />
-        <HorizontalCard img={photo2} text="Experiences" />
-        <HorizontalCard img={photo3} text="Restaurants" />
+        <div className="col-lg-4">
+          <HorizontalCard img={photo1} text="Homes" />
+        </div>
+        <div className="col-lg-4">
+          <HorizontalCard img={photo2} text="Experiences" />
+        </div>
+        <div className="col-lg-4">
+          <HorizontalCard img={photo3} text="Restaurants" />
+        </div>
       </div>
     </Container>
   );

@@ -30,12 +30,10 @@ const Img = styled.img`
 
 const HorizontalCard = function (props) {
   return (
-    <div className="col-lg-4">
-      <Container>
-        <Img src={props.img} alt={props.text} title={props.text} />
-        <Text>{props.text}</Text>
-      </Container>
-    </div>
+    <Container>
+      <Img src={props.img} alt={props.text} title={props.text} />
+      <Text>{props.text}</Text>
+    </Container>
   );
 };
 
