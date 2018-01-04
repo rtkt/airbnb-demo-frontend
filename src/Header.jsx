@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchField from '../SearchField/SearchField';
-import NavLinks from '../NavLinks';
-import logo from './logo.svg';
+import SearchField from './SearchField';
+import NavLinks from './NavLinks';
+import logo from './imgs/logo.svg';
 
 const height = 80;
 
