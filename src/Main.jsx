@@ -14,6 +14,7 @@ const Container = styled.main`
 const HeadingWrapper = styled.div`
   align-items: baseline;
   display: flex;
+  margin-bottom: 24px;
   justify-content: space-between;
 `;
 
