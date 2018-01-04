@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Box } from '../common';
+import { Box } from './common';
 
 const lineHeight = 24;
 

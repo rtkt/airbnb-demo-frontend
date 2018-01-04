@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { H1 } from '../common';
+import { H1 } from './common';
 
 const Container = styled.section`
   margin-top: ${props => props.marginTop}px;

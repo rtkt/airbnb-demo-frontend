@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import MainSection from '../MainSection/';
-import Header from '../Header/';
-import HorizontalCard from '../HorizontalCard/';
-import exploreSectionPhoto1 from '../imgs/exploreSection-1.png';
-import exploreSectionPhoto2 from '../imgs/exploreSection-2.png';
-import exploreSectionPhoto3 from '../imgs/exploreSection-3.png';
+import Header from './Header/';
+import { H1 } from './common';
+import HorizontalCard from './HorizontalCard';
+import exploreSectionPhoto1 from './imgs/exploreSection-1.png';
+import exploreSectionPhoto2 from './imgs/exploreSection-2.png';
+import exploreSectionPhoto3 from './imgs/exploreSection-3.png';
 
 const Main = styled.main`
   margin-top: 128px;
+`;
+
+const Section = styled.section`
+  position: relative;
 `;
 
 const App = function () {
@@ -16,7 +20,8 @@ const App = function () {
     <Header />,
     <Main>
       <div className="container">
-        <MainSection heading="Explore Airbnb">
+        <Section>
+          <H1>Explore</H1>
           <div className="row">
             <div className="col-lg-4">
               <HorizontalCard img={exploreSectionPhoto1} text="Homes" />
@@ -28,7 +33,7 @@ const App = function () {
               <HorizontalCard img={exploreSectionPhoto3} text="Restaurants" />
             </div>
           </div>
-        </MainSection>
+        </Section>
       </div>
     </Main>,
   ];
