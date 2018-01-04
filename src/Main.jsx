@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import HorizontalCard from './HorizontalCard';
+import PlaceCard from './PlaceCard';
+import experiencePhoto1 from './imgs/experience-1.png';
+import experiencePhoto2 from './imgs/experience-2.png';
+import experiencePhoto3 from './imgs/experience-3.png';
+import experiencePhoto4 from './imgs/experience-4.png';
 import explorePhoto1 from './imgs/explore-1.png';
 import explorePhoto2 from './imgs/explore-2.png';
 import explorePhoto3 from './imgs/explore-3.png';
@@ -69,7 +74,14 @@ const ExploreRow = function exploreRow() {
 const ExperiencesRow = function experiencesRow() {
   return (
     <div className="row">
-      <p>test</p>
+      <PlaceCard
+        href="#"
+        img={experiencePhoto1}
+        alt="Forest therapy"
+        name="Forest therapy"
+        numOfReviews="44 reviews"
+        price="29"
+      />
     </div>
   );
 };
