@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H1 } from './common';
 import HorizontalCard from './HorizontalCard';
 import explorePhoto1 from './imgs/explorePhoto-1.png';
 import explorePhoto2 from './imgs/explorePhoto-2.png';
@@ -9,6 +8,11 @@ import morePic from './imgs/seeAllButton.svg';
 
 const Container = styled.main`
   margin-top: 128px;
+`;
+
+const H1 = styled.h1`
+  font-size: 32px;
+  font-weight: bold;
 `;
 
 const HeadingWrapper = styled.div`
