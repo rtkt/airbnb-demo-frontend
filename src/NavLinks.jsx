@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const lineHeight = 24;
@@ -42,14 +41,6 @@ const NavLinks = function navLinks(props) {
       {/* eslint-enable jsx-a11y/anchor-is-valid */}
     </Box>
   );
-};
-
-NavLinks.defaultProps = {
-  height: 80,
-};
-
-NavLinks.propTypes = {
-  height: PropTypes.number,
 };
 
 export default NavLinks;

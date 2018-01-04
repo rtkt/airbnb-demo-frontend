@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 
@@ -35,11 +34,6 @@ const HorizontalCard = function horizontalCard(props) {
       <Text>{props.text}</Text>
     </Container>
   );
-};
-
-HorizontalCard.propTypes = {
-  img: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
 };
 
 export default HorizontalCard;

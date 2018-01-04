@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import searchIcon from './search.svg';
 
@@ -30,19 +29,9 @@ const SearchBox = styled.div`
   position: relative;
 `;
 
-SearchBox.defaultProps = {
-  height: 80,
-};
-
-SearchBox.propTypes = {
-  height: PropTypes.number,
-};
-
 const SearchField = function searchField(props) {
   return (
-    /* eslint-disable react/prop-types */
     <SearchBox height={props.height}>
-      {/* eslint-enable react/prop-types */}
       <Input type="text" name="location" placeholder="Try &quot;Miami&quot;" />
       <Icon src={searchIcon} alt="Search icon" title="Search icon" />
     </SearchBox>
