@@ -7,8 +7,11 @@ const linkOpts = {
 };
 
 const CardLink = styled.a`
+  align-items: center;
   color: ${linkOpts.color};
+  display: flex;
   font-weight: ${linkOpts.fontWeight};
+  text-decoration: none;
   &:link {
     color: ${linkOpts.color};
     font-weight: ${linkOpts.fontWeight};
@@ -24,30 +27,18 @@ const Container = styled.div`
   border-radius: 4px;
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
-  height: 72px;
-  position: relative;
 `;
 
 const Text = styled.span`
   font-size: 17px;
-  left: 120px;
-  line-height: 72px;
-  position: absolute;
-  vertical-align: middle;
-`;
-
-const Img = styled.img`
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 96px;
+  margin-left: 24px;
 `;
 
 const HorizontalCard = function horizontalCard(props) {
   return (
     <Container>
       <CardLink color={props.color} deLink href={props.href} title={props.linkTitle}>
-        <Img src={props.img} alt={props.text} title={props.text} />
+        <img src={props.img} alt={props.text} title={props.text} />
         <Text>{props.text}</Text>
       </CardLink>
     </Container>
