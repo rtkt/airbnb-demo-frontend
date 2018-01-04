@@ -18,7 +18,6 @@ const Section = styled.section`
 
 const MoreContainer = styled.div`
   color: #383838;
-  font-family: 'Circular';
   font-size: 14px;
   line-height: 24px;
   position: absolute;
