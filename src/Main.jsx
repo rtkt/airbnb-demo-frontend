@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import HorizontalCard from './HorizontalCard';
-import explorePhoto1 from './imgs/explorePhoto-1.png';
-import explorePhoto2 from './imgs/explorePhoto-2.png';
-import explorePhoto3 from './imgs/explorePhoto-3.png';
+import explorePhoto1 from './imgs/explore-1.png';
+import explorePhoto2 from './imgs/explore-2.png';
+import explorePhoto3 from './imgs/explore-3.png';
 import morePic from './imgs/seeAllButton.svg';
 
 const linkOpts = {
