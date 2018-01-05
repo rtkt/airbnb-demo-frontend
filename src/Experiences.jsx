@@ -1,5 +1,5 @@
 import React from 'react';
-import PlaceCard from './PlaceCard';
+import ExperienceCard from './ExperienceCard';
 import { Heading, Section } from './lib/Section';
 import experiencePhoto1 from './imgs/experience-1.png';
 import experiencePhoto2 from './imgs/experience-2.png';
@@ -12,7 +12,7 @@ const Experiences = function experiences() {
       <Heading text="Experiences" />
       <div className="row">
         <div className="col-lg-3">
-          <PlaceCard
+          <ExperienceCard
             href="#"
             img={experiencePhoto1}
             alt="Forest therapy"
@@ -22,7 +22,7 @@ const Experiences = function experiences() {
           />
         </div>
         <div className="col-lg-3">
-          <PlaceCard
+          <ExperienceCard
             href="#"
             img={experiencePhoto2}
             alt="Whale watching"
@@ -32,7 +32,7 @@ const Experiences = function experiences() {
           />
         </div>
         <div className="col-lg-3">
-          <PlaceCard
+          <ExperienceCard
             href="#"
             img={experiencePhoto3}
             alt="Table Mountain Summit, Cable Car Down"
@@ -42,7 +42,7 @@ const Experiences = function experiences() {
           />
         </div>
         <div className="col-lg-3">
-          <PlaceCard
+          <ExperienceCard
             href="#"
             img={experiencePhoto4}
             alt="Salsa night"
