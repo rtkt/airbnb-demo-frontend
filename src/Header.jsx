@@ -16,7 +16,6 @@ const Container = styled.header`
 `;
 
 const Logo = styled.img`
-  display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
   vertical-align: middle;
