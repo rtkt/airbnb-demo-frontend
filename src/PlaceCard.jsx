@@ -7,7 +7,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin-right: 17px;
 `;
 
 const Name = styled.span`
