@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchField from './Search';
+import Search from './Search';
 import Nav from './Nav';
 import logo from './imgs/logo.svg';
 
@@ -30,7 +30,7 @@ const Header = function header() {
             <Logo src={logo} alt="Logo" title="Logo" />
           </div>
           <div className="col-lg-5">
-            <SearchField height={height} />
+            <Search height={height} />
           </div>
           <div className="col-lg-4 col-lg-offset-2">
             <Nav height={height} />
