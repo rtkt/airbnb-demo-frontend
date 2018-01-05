@@ -16,7 +16,7 @@ const PlaceCard = function placeCard(props) {
       <Img src={props.img} alt={props.alt} title={props.alt} />
       <Name>
         <Price>{props.price} </Price>
-        {props.name}
+        {props.title}
       </Name>
       <Reviews>
         <Star src={star} />

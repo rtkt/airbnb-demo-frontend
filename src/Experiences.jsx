@@ -16,7 +16,7 @@ const Experiences = function experiences() {
             href="#"
             img={experiencePhoto1}
             alt="Forest therapy"
-            name="Forest therapy"
+            title="Forest therapy"
             numOfReviews="44 reviews"
             price="29"
           />
@@ -26,7 +26,7 @@ const Experiences = function experiences() {
             href="#"
             img={experiencePhoto2}
             alt="Whale watching"
-            name="Whale watching"
+            title="Whale watching"
             numOfReviews="46 reviews"
             price="69"
           />
@@ -36,7 +36,7 @@ const Experiences = function experiences() {
             href="#"
             img={experiencePhoto3}
             alt="Table Mountain Summit, Cable Car Down"
-            name="Table Mountain Summit, Cable Car Down"
+            title="Table Mountain Summit, Cable Car Down"
             numOfReviews="44 reviews"
             price="69"
           />
@@ -46,7 +46,7 @@ const Experiences = function experiences() {
             href="#"
             img={experiencePhoto4}
             alt="Salsa night"
-            name="Salsa night"
+            title="Salsa night"
             numOfReviews="44 reviews"
             price="50"
           />

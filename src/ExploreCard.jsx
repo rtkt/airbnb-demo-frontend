@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardLink = styled.a`
+const Link = styled.a`
   align-items: center;
   display: flex;
   font-weight: bold;
@@ -24,15 +24,15 @@ const Text = styled.span`
   margin-left: 24px;
 `;
 
-const HorizontalCard = function horizontalCard(props) {
+const ExploreCard = function exploreCard(props) {
   return (
     <Container>
-      <CardLink href={props.href} title={props.linkTitle}>
-        <Img src={props.img} alt={props.text} title={props.text} />
-        <Text>{props.text}</Text>
-      </CardLink>
+      <Link href={props.href} title={props.alt}>
+        <Img src={props.img} alt={props.alt} title={props.alt} />
+        <Text>{props.title}</Text>
+      </Link>
     </Container>
   );
 };
 
-export default HorizontalCard;
+export default ExploreCard;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './HorizontalCard';
+import Card from './ExploreCard';
 import { H1, Section } from './lib/Section';
 import explorePhoto1 from './imgs/explore-1.png';
 import explorePhoto2 from './imgs/explore-2.png';
@@ -11,13 +11,13 @@ const Explore = function explore() {
       <H1>Explore</H1>
       <div className="row">
         <div className="col-lg-4">
-          <Card href="#" img={explorePhoto1} linkTitle="Homes" text="Homes" />
+          <Card href="#" img={explorePhoto1} title="Homes" alt="Homes" />
         </div>
         <div className="col-lg-4">
-          <Card href="#" img={explorePhoto2} linkTitle="Experiences" text="Experiences" />
+          <Card href="#" img={explorePhoto2} title="Experiences" alt="Experiences" />
         </div>
         <div className="col-lg-4">
-          <Card href="#" img={explorePhoto3} linkTitle="Restaurants" text="Restaurants" />
+          <Card href="#" img={explorePhoto3} title="Restaurants" alt="Restaurants" />
         </div>
       </div>
     </Section>
