@@ -1,0 +1,36 @@
+import React from 'react';
+import styled from 'styled-components';
+import HorizontalCard from './HorizontalCard';
+import explorePhoto1 from './imgs/explore-1.png';
+import explorePhoto2 from './imgs/explore-2.png';
+import explorePhoto3 from './imgs/explore-3.png';
+
+const H1 = styled.h1`
+  font-size: 32px;
+  font-weight: bold;
+`;
+
+const Section = styled.section`
+  margin-top: 48px;
+`;
+
+const Explore = function explore() {
+  return (
+    <Section>
+      <H1>Explore</H1>
+      <div className="row">
+        <div className="col-lg-4">
+          <HorizontalCard href="#" img={explorePhoto1} linkTitle="Homes" text="Homes" />
+        </div>
+        <div className="col-lg-4">
+          <HorizontalCard href="#" img={explorePhoto2} linkTitle="Experiences" text="Experiences" />
+        </div>
+        <div className="col-lg-4">
+          <HorizontalCard href="#" img={explorePhoto3} linkTitle="Restaurants" text="Restaurants" />
+        </div>
+      </div>
+    </Section>
+  );
+};
+
+export default Explore;

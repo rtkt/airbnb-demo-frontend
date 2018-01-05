@@ -1,16 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import HorizontalCard from './HorizontalCard';
 import HomeCard from './HomeCard';
 import PlaceCard from './PlaceCard';
 import PopularCard from './PopularCard';
+import Explore from './Explore';
 import experiencePhoto1 from './imgs/experience-1.png';
 import experiencePhoto2 from './imgs/experience-2.png';
 import experiencePhoto3 from './imgs/experience-3.png';
 import experiencePhoto4 from './imgs/experience-4.png';
-import explorePhoto1 from './imgs/explore-1.png';
-import explorePhoto2 from './imgs/explore-2.png';
-import explorePhoto3 from './imgs/explore-3.png';
 import homePhoto1 from './imgs/homes-1.png';
 import homePhoto2 from './imgs/homes-2.png';
 import homePhoto3 from './imgs/homes-3.png';
@@ -63,22 +60,6 @@ const SeeAllLink = styled.a`
     color: ${linkOpts.color};
   }
 `;
-
-const ExploreRow = function exploreRow() {
-  return (
-    <div className="row">
-      <div className="col-lg-4">
-        <HorizontalCard href="#" img={explorePhoto1} linkTitle="Homes" text="Homes" />
-      </div>
-      <div className="col-lg-4">
-        <HorizontalCard href="#" img={explorePhoto2} linkTitle="Experiences" text="Experiences" />
-      </div>
-      <div className="col-lg-4">
-        <HorizontalCard href="#" img={explorePhoto3} linkTitle="Restaurants" text="Restaurants" />
-      </div>
-    </div>
-  );
-};
 
 const ExperiencesRow = function experiencesRow() {
   return (
@@ -234,10 +215,7 @@ const Main = function main() {
   return (
     <Container>
       <div className="container">
-        <Section>
-          <H1>Explore</H1>
-          <ExploreRow />
-        </Section>
+        <Explore />
         <Section>
           <Heading text="Experiences" />
           <ExperiencesRow />
