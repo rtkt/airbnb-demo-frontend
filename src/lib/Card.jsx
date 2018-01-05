@@ -25,7 +25,7 @@ export const Reviews = FlexLine.extend`
   font-size: 12px;
 `;
 
-export const RightToStars = styled.span`
+export const Rating = styled.span`
   margin-left: 8px;
 `;
 

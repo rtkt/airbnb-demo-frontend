@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Img, Price, Reviews, RightToStars, Star, VerticalContainer } from './lib/Card';
+import { Img, Price, Reviews, Rating, Star, VerticalContainer } from './lib/Card';
 import star from './imgs/star.svg';
 
 const Area = styled.span`
@@ -34,7 +34,7 @@ const HomeCard = function homeCard(props) {
         <Star src={star} />
         <Star src={star} />
         <Star src={star} />
-        <RightToStars>{props.rating}</RightToStars>
+        <Rating>{props.rating}</Rating>
       </PushedReviews>
     </VerticalContainer>
   );
