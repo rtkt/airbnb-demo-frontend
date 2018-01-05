@@ -1,18 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import HorizontalCard from './HorizontalCard';
+import { H1, Section } from './lib/Section';
 import explorePhoto1 from './imgs/explore-1.png';
 import explorePhoto2 from './imgs/explore-2.png';
 import explorePhoto3 from './imgs/explore-3.png';
-
-const H1 = styled.h1`
-  font-size: 32px;
-  font-weight: bold;
-`;
-
-const Section = styled.section`
-  margin-top: 48px;
-`;
 
 const Explore = function explore() {
   return (
