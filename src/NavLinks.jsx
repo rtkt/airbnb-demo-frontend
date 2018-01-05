@@ -1,41 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const lineHeight = 24;
-
-const Box = styled.div`
-  position: relative;
+const Container = styled.nav`
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 27px;
 `;
 
 const Link = styled.a`
   font-size: 14px;
-  line-height: ${lineHeight}px;
+  line-height: 24px;
   padding-left: 8px;
   padding-right: 8px;
-  position: absolute;
-  right: ${props => props.right};
   text-align: center;
   text-decoration: none;
-  top: ${props => (props.height - lineHeight) / 2}px;
-  vertical-align: middle;
 `;
 
-const NavLinks = function navLinks(props) {
+const NavLinks = function navLinks() {
   return (
-    <Box>
-      <Link href="#" title="Become a host" height={props.height} right="192px">
+    <Container>
+      <Link href="#" title="Become a host">
         Become a host
       </Link>
-      <Link href="#" title="Help" height={props.height} right="136px">
+      <Link href="#" title="Help">
         Help
       </Link>
-      <Link href="#" title="Sign up" height={props.height} right="72px">
+      <Link href="#" title="Sign up">
         Sign up
       </Link>
-      <Link href="#" title="Log in" height={props.height} right="8px">
+      <Link href="#" title="Log in">
         Log in
       </Link>
-    </Box>
+    </Container>
   );
 };
 
