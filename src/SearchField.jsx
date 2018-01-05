@@ -12,10 +12,6 @@ const SearchBox = styled.form`
   padding: 12px 0 12px 16px;
 `;
 
-const Icon = styled.img`
-  display: block;
-`;
-
 const Input = styled.input`
   border: 0;
   display: block;
@@ -27,7 +23,7 @@ const Input = styled.input`
 const SearchField = function searchField() {
   return (
     <SearchBox>
-      <Icon src={searchIcon} alt="Search icon" title="Search icon" />
+      <img src={searchIcon} alt="Search icon" title="Search icon" />
       <Input type="text" name="location" placeholder="Try &quot;Miami&quot;" />
     </SearchBox>
   );
