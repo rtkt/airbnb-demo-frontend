@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { VerticalContainer } from './Card';
+import { VerticalContainer } from './lib/Card';
 
 const Line = styled.span`
   color: #383838;

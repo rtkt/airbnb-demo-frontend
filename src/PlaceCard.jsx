@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Price, Reviews, RightToStars, Star, VerticalContainer } from './Card';
+import { Price, Reviews, RightToStars, Star, VerticalContainer } from './lib/Card';
 import star from './imgs/star.svg';
 
 const Name = styled.span`
