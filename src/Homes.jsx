@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeCard from './HomeCard';
+import Card from './HomeCard';
 import { Heading, Section } from './lib/Section';
 import homePhoto1 from './imgs/home-1.png';
 import homePhoto2 from './imgs/home-2.png';
@@ -11,7 +11,7 @@ const Homes = function homes() {
       <Heading text="Homes" />
       <div className="row">
         <div className="col-lg-4">
-          <HomeCard
+          <Card
             href="#"
             img={homePhoto1}
             alt="La Salentina"
@@ -22,7 +22,7 @@ const Homes = function homes() {
           />
         </div>
         <div className="col-lg-4">
-          <HomeCard
+          <Card
             href="#"
             img={homePhoto2}
             alt="Your private 3 bedroom"
@@ -33,7 +33,7 @@ const Homes = function homes() {
           />
         </div>
         <div className="col-lg-4">
-          <HomeCard
+          <Card
             href="#"
             img={homePhoto3}
             alt="Dreamy Tropical Tree House"

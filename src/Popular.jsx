@@ -1,5 +1,5 @@
 import React from 'react';
-import PopularCard from './PopularCard';
+import Card from './PopularCard';
 import { Heading, Section } from './lib/Section';
 import popularPhoto1 from './imgs/popular-1.png';
 import popularPhoto2 from './imgs/popular-2.png';
@@ -12,16 +12,10 @@ const Popular = function popular() {
       <Heading text="Popular reservations around the world" />
       <div className="row">
         <div className="col-lg-3">
-          <PopularCard
-            img={popularPhoto1}
-            alt="Chumley's"
-            name="Speakeasy"
-            place="Chumley's"
-            price="60"
-          />
+          <Card img={popularPhoto1} alt="Chumley's" name="Speakeasy" place="Chumley's" price="60" />
         </div>
         <div className="col-lg-3">
-          <PopularCard
+          <Card
             img={popularPhoto2}
             alt="Hanjan"
             name="Korean gastropub"
@@ -30,7 +24,7 @@ const Popular = function popular() {
           />
         </div>
         <div className="col-lg-3">
-          <PopularCard
+          <Card
             img={popularPhoto3}
             alt="Prime Meats"
             name="German american"
@@ -39,7 +33,7 @@ const Popular = function popular() {
           />
         </div>
         <div className="col-lg-3">
-          <PopularCard
+          <Card
             img={popularPhoto4}
             alt="Seaprice"
             name="Fine seafood"

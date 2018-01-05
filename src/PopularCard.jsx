@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Img, VerticalContainer } from './lib/Card';
+import { Img, VerticalContainer as Container } from './lib/Card';
 
 const Name = styled.span`
   font-size: 10px;
@@ -26,12 +26,12 @@ const Price = styled.span`
 
 const PopularCard = function popularCard(props) {
   return (
-    <VerticalContainer>
+    <Container>
       <Img src={props.img} alt={props.alt} title={props.alt} />
       <Name>{props.name}</Name>
       <Place>{props.place}</Place>
       <Price>About ${props.price} per person</Price>
-    </VerticalContainer>
+    </Container>
   );
 };
 

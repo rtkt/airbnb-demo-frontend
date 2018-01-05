@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchField from './SearchField';
-import NavLinks from './NavLinks';
+import SearchField from './Search';
+import Nav from './Nav';
 import logo from './imgs/logo.svg';
 
 const height = 80;
@@ -33,7 +33,7 @@ const Header = function header() {
             <SearchField height={height} />
           </div>
           <div className="col-lg-4 col-lg-offset-2">
-            <NavLinks height={height} />
+            <Nav height={height} />
           </div>
         </div>
       </div>
