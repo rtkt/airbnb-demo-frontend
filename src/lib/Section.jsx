@@ -27,10 +27,15 @@ export const Section = styled.section`
   margin-top: 48px;
 `;
 
+const H1NoMargins = H1.extend`
+  margin-bottom: 0;
+  margin-top: 0;
+`;
+
 export const Heading = function heading(props) {
   return (
     <HeadingWrapper>
-      <H1>{props.text}</H1>
+      <H1NoMargins>{props.text}</H1NoMargins>
       <More />
     </HeadingWrapper>
   );
