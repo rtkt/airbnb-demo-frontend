@@ -23,7 +23,6 @@ const Link = styled.a`
 const NavLinks = function navLinks(props) {
   return (
     <Box>
-      {/* eslint-disable jsx-a11y/anchor-is-valid */}
       <Link href="#" title="Become a host" height={props.height} right="192px">
         Become a host
       </Link>
@@ -36,7 +35,6 @@ const NavLinks = function navLinks(props) {
       <Link href="#" title="Log in" height={props.height} right="8px">
         Log in
       </Link>
-      {/* eslint-enable jsx-a11y/anchor-is-valid */}
     </Box>
   );
 };
