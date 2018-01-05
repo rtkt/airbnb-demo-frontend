@@ -82,6 +82,30 @@ const ExperiencesRow = function experiencesRow() {
         numOfReviews="44 reviews"
         price="29"
       />
+      <PlaceCard
+        href="#"
+        img={experiencePhoto2}
+        alt="Whale watching"
+        name="Whale watching"
+        numOfReviews="46 reviews"
+        price="69"
+      />
+      <PlaceCard
+        href="#"
+        img={experiencePhoto3}
+        alt="Table Mountain Summit, Cable Car Down"
+        name="Table Mountain Summit, Cable Car Down"
+        numOfReviews="44 reviews"
+        price="69"
+      />
+      <PlaceCard
+        href="#"
+        img={experiencePhoto4}
+        alt="Salsa night"
+        name="Salsa night"
+        numOfReviews="44 reviews"
+        price="50"
+      />
     </div>
   );
 };
