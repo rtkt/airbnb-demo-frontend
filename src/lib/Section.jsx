@@ -2,32 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 import morePic from '../imgs/seeAllButton.svg';
 
-export const H1 = styled.h1`
-  font-size: 32px;
-  font-weight: bold;
-`;
-
-export const HeadingWrapper = styled.div`
+const HeadingWrapper = styled.div`
   align-items: baseline;
   display: flex;
   margin-bottom: 24px;
   justify-content: space-between;
 `;
 
-export const MoreContainer = styled.div`
-  font-size: 14px;
+const MoreButton = styled.img`
+  margin-left: 8px;
 `;
 
-export const MoreButton = styled.img`
-  margin-left: 8px;
+const SeeAll = styled.a`
+  font-size: 14px;
+  text-decoration: none;
+`;
+
+export const H1 = styled.h1`
+  font-size: 32px;
+  font-weight: bold;
 `;
 
 export const Section = styled.section`
   margin-top: 48px;
-`;
-
-export const SeeAllLink = styled.a`
-  text-decoration: none;
 `;
 
 export const Heading = function heading(props) {
@@ -41,11 +38,11 @@ export const Heading = function heading(props) {
 
 export const More = function more() {
   return (
-    <MoreContainer>
-      <SeeAllLink href="#" title="See all">
+    <div>
+      <SeeAll href="#" title="See all">
         <span>See all</span>
         <MoreButton src={morePic} alt="See all" title="See all" />
-      </SeeAllLink>
-    </MoreContainer>
+      </SeeAll>
+    </div>
   );
 };
