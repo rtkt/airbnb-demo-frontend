@@ -10,6 +10,10 @@ export const FlexLine = styled.span`
   display: flex;
 `;
 
+export const Img = styled.img`
+  width: 100%;
+`;
+
 export const Price = styled.span`
   font-weight: bold;
   &::before {

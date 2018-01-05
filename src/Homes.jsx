@@ -1,9 +1,9 @@
 import React from 'react';
 import HomeCard from './HomeCard';
 import { Heading, Section } from './lib/Section';
-import homePhoto1 from './imgs/homes-1.png';
-import homePhoto2 from './imgs/homes-2.png';
-import homePhoto3 from './imgs/homes-3.png';
+import homePhoto1 from './imgs/home-1.png';
+import homePhoto2 from './imgs/home-2.png';
+import homePhoto3 from './imgs/home-3.png';
 
 const Homes = function homes() {
   return (
