@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HorizontalCard from './HorizontalCard';
+import HomeCard from './HomeCard';
 import PlaceCard from './PlaceCard';
 import experiencePhoto1 from './imgs/experience-1.png';
 import experiencePhoto2 from './imgs/experience-2.png';
@@ -9,6 +10,9 @@ import experiencePhoto4 from './imgs/experience-4.png';
 import explorePhoto1 from './imgs/explore-1.png';
 import explorePhoto2 from './imgs/explore-2.png';
 import explorePhoto3 from './imgs/explore-3.png';
+import homePhoto1 from './imgs/homes-1.png';
+import homePhoto2 from './imgs/homes-2.png';
+import homePhoto3 from './imgs/homes-3.png';
 import morePic from './imgs/seeAllButton.svg';
 
 const linkOpts = {
@@ -127,6 +131,46 @@ const Heading = function heading(props) {
   );
 };
 
+const HomesRow = function homesRow() {
+  return (
+    <div className="row">
+      <div className="col-lg-4">
+        <HomeCard
+          href="#"
+          img={homePhoto1}
+          alt="La Salentina"
+          name="La Salentina, see, nature & relax"
+          area="Entire house · 9 beds"
+          rating="97 · Superhost"
+          price="82"
+        />
+      </div>
+      <div className="col-lg-4">
+        <HomeCard
+          href="#"
+          img={homePhoto2}
+          alt="Your private 3 bedroom"
+          name="Your private 3 bedr. riad and exclusi..."
+          area="Entire house · 5 beds"
+          rating="161 · Superhost"
+          price="82"
+        />
+      </div>
+      <div className="col-lg-4">
+        <HomeCard
+          href="#"
+          img={homePhoto3}
+          alt="Dreamy Tropical Tree House"
+          name="Dreamy Tropical Tree House"
+          area="Entire treehouse · 1 bed"
+          rating="364 · Superhost"
+          price="200"
+        />
+      </div>
+    </div>
+  );
+};
+
 const More = function more() {
   return (
     <MoreContainer>
@@ -149,6 +193,10 @@ const Main = function main() {
         <Section>
           <Heading text="Experiences" />
           <ExperiencesRow />
+        </Section>
+        <Section>
+          <Heading text="Homes" />
+          <HomesRow />
         </Section>
       </div>
     </Container>
