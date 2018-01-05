@@ -2,11 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Img, VerticalContainer } from './lib/Card';
 
-const Line = styled.span`
-  color: #383838;
-`;
-
-const Name = Line.extend`
+const Name = styled.span`
   font-size: 10px;
   font-weight: bold;
   line-height: 12px;
@@ -14,14 +10,14 @@ const Name = Line.extend`
   text-transform: uppercase;
 `;
 
-const Place = Line.extend`
+const Place = styled.span`
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 4px;
   margin-top: 2px;
 `;
 
-const Price = Line.extend`
+const Price = styled.span`
   font-size: 18px;
   font-weight: 200;
   mix-blend-mode: normal;

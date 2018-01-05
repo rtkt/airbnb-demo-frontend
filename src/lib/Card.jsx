@@ -26,7 +26,6 @@ export const Reviews = FlexLine.extend`
 `;
 
 export const RightToStars = styled.span`
-  color: #383838;
   margin-left: 8px;
 `;
 

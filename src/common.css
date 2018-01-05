@@ -22,3 +22,10 @@
 body {
   font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+body,
+:link,
+:hover,
+:visited {
+  color: #383838;
+}

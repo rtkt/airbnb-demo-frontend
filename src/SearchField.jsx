@@ -18,9 +18,7 @@ const Icon = styled.img`
 
 const Input = styled.input`
   border: 0;
-  color: #383838;
   display: block;
-  font-family: 'Circular';
   font-size: 16px;
   padding: 0;
   padding-left: 16px;

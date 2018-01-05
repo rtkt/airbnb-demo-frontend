@@ -1,25 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const linkOpts = {
-  color: '#383838',
-  fontWeight: 'bold',
-};
-
 const CardLink = styled.a`
   align-items: center;
-  color: ${linkOpts.color};
   display: flex;
-  font-weight: ${linkOpts.fontWeight};
+  font-weight: bold;
   text-decoration: none;
-  &:link {
-    color: ${linkOpts.color};
-    font-weight: ${linkOpts.fontWeight};
-  }
-  &:hover {
-    color: ${linkOpts.color};
-    font-weight: ${linkOpts.fontWeight};
-  }
 `;
 
 const Img = styled.img`

@@ -8,7 +8,6 @@ const Box = styled.div`
 `;
 
 const Link = styled.a`
-  color: #383838;
   font-size: 14px;
   line-height: ${lineHeight}px;
   padding-left: 8px;

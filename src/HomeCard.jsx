@@ -4,7 +4,6 @@ import { Img, Price, Reviews, RightToStars, Star, VerticalContainer } from './li
 import star from './imgs/star.svg';
 
 const Area = styled.span`
-  color: #383838;
   font-size: 15px;
   font-weight: light;
 `;
