@@ -7,6 +7,7 @@ import logo from './imgs/logo.svg';
 const height = 80;
 
 const Container = styled.header`
+  background-color: white;
   box-shadow: 0px 0.5px 0px rgba(72, 72, 72, 0.3);
   left: 0;
   position: fixed;
