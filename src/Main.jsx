@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import HorizontalCard from './HorizontalCard';
 import HomeCard from './HomeCard';
 import PlaceCard from './PlaceCard';
+import PopularCard from './PopularCard';
 import experiencePhoto1 from './imgs/experience-1.png';
 import experiencePhoto2 from './imgs/experience-2.png';
 import experiencePhoto3 from './imgs/experience-3.png';
@@ -13,6 +14,10 @@ import explorePhoto3 from './imgs/explore-3.png';
 import homePhoto1 from './imgs/homes-1.png';
 import homePhoto2 from './imgs/homes-2.png';
 import homePhoto3 from './imgs/homes-3.png';
+import popularPhoto1 from './imgs/popular-1.png';
+import popularPhoto2 from './imgs/popular-2.png';
+import popularPhoto3 from './imgs/popular-3.png';
+import popularPhoto4 from './imgs/popular-4.png';
 import morePic from './imgs/seeAllButton.svg';
 
 const linkOpts = {
@@ -182,6 +187,49 @@ const More = function more() {
   );
 };
 
+const PopularRow = function popularRow() {
+  return (
+    <div className="row">
+      <div className="col-lg-3">
+        <PopularCard
+          img={popularPhoto1}
+          alt="Chumley's"
+          name="Speakeasy"
+          place="Chumley's"
+          price="60"
+        />
+      </div>
+      <div className="col-lg-3">
+        <PopularCard
+          img={popularPhoto2}
+          alt="Hanjan"
+          name="Korean gastropub"
+          place="Hanjan"
+          price="50"
+        />
+      </div>
+      <div className="col-lg-3">
+        <PopularCard
+          img={popularPhoto3}
+          alt="Prime Meats"
+          name="German american"
+          place="Prime Meats"
+          price="55"
+        />
+      </div>
+      <div className="col-lg-3">
+        <PopularCard
+          img={popularPhoto4}
+          alt="Seaprice"
+          name="Fine seafood"
+          place="Seaprice"
+          price="70"
+        />
+      </div>
+    </div>
+  );
+};
+
 const Main = function main() {
   return (
     <Container>
@@ -197,6 +245,10 @@ const Main = function main() {
         <Section>
           <Heading text="Homes" />
           <HomesRow />
+        </Section>
+        <Section>
+          <Heading text="Popular reservations around the world" />
+          <PopularRow />
         </Section>
       </div>
     </Container>
