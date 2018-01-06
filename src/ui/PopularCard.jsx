@@ -6,7 +6,7 @@ const Place = styled.span`
   font-size: 10px;
   font-weight: bold;
   line-height: 12px;
-  margin-top: 6px;
+  margin-top: 5px;
   text-transform: uppercase;
 `;
 

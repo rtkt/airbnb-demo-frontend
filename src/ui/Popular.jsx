@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './PopularCard';
-import { Heading, Section } from '../lib/Section';
+import { Heading, Section, Slider, SliderButton } from '../lib/Section';
 import popularPhoto1 from '../imgs/popular-1.png';
 import popularPhoto2 from '../imgs/popular-2.png';
 import popularPhoto3 from '../imgs/popular-3.png';
@@ -10,7 +10,7 @@ function Popular() {
   return (
     <Section>
       <Heading text="Popular reservations around the world" />
-      <div className="row">
+      <Slider className="row">
         <div className="col-lg-3">
           <Card
             href="#"
@@ -51,7 +51,8 @@ function Popular() {
             price="70"
           />
         </div>
-      </div>
+      </Slider>
+      <SliderButton />
     </Section>
   );
 }

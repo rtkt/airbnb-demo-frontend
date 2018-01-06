@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './HomeCard';
-import { Heading, Section } from '../lib/Section';
+import { Heading, Section, Slider, SliderButton } from '../lib/Section';
 import photo1 from '../imgs/home-1.png';
 import photo2 from '../imgs/home-2.png';
 import photo3 from '../imgs/home-3.png';
@@ -9,7 +9,7 @@ function Homes() {
   return (
     <Section>
       <Heading text="Homes" />
-      <div className="row">
+      <Slider className="row">
         <div className="col-lg-4">
           <Card
             href="#"
@@ -43,7 +43,8 @@ function Homes() {
             price="200"
           />
         </div>
-      </div>
+      </Slider>
+      <SliderButton />
     </Section>
   );
 }

@@ -30,7 +30,7 @@ const Container = styled.div`
 
 const Text = styled.span`
   font-size: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   margin-left: 12px;
   margin-top: 18px;
 

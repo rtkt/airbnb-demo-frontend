@@ -12,7 +12,7 @@ const Title = styled.span`
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 2px;
-  margin-top: 8px;
+  margin-top: 7px;
 `;
 
 const PushedReviews = Reviews.extend`

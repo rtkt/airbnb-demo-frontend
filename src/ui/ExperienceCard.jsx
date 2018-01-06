@@ -7,7 +7,7 @@ const Name = styled.span`
   font-size: 15px;
   font-weight: 200;
   margin-bottom: 6px;
-  margin-top: 8px;
+  margin-top: 7px;
 `;
 
 function Card(props) {

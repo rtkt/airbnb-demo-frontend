@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H1, Section } from '../lib/Section';
+import { H1, Section, Slider, SliderButton } from '../lib/Section';
 import { VerticalContainer as Container, Img } from '../lib/Card';
 import photo1 from '../imgs/featured-1.png';
 import photo2 from '../imgs/featured-2.png';
@@ -29,7 +29,7 @@ function Featured() {
   return (
     <Section>
       <H1>Featured destinations</H1>
-      <div className="row">
+      <Slider className="row">
         <div className="col-lg-2">
           <Card href="#" img={photo1} alt="Paris" title="Paris" />
         </div>
@@ -48,7 +48,8 @@ function Featured() {
         <div className="col-lg-2">
           <Card href="#" img={photo6} alt="Los Angeles" title="Los Angeles" />
         </div>
-      </div>
+      </Slider>
+      <SliderButton />
     </Section>
   );
 }
