@@ -39,7 +39,7 @@ export const Section = styled.section`
   }
 `;
 
-const H1NoMargins = H1.extend`
+const CompactH1 = H1.extend`
   margin-bottom: 0;
   margin-top: 0;
 `;
@@ -47,19 +47,17 @@ const H1NoMargins = H1.extend`
 export function Heading(props) {
   return (
     <HeadingWrapper>
-      <H1NoMargins>{props.text}</H1NoMargins>
+      <CompactH1>{props.text}</CompactH1>
       <More />
     </HeadingWrapper>
   );
 }
 
-export function More() {
+function More() {
   return (
-    <div>
-      <SeeAll href="#" title="See all">
-        <span>See all</span>
-        <MoreButton src={morePic} alt="See all" title="See all" />
-      </SeeAll>
-    </div>
+    <SeeAll href="#" title="See all">
+      <span>See all</span>
+      <MoreButton src={morePic} alt="See all" title="See all" />
+    </SeeAll>
   );
 }

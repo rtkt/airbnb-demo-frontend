@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ListHeader = styled.a`
+const HeaderLink = styled.a`
   font-weight: bold;
   margin-bottom: 16px;
 `;
 
-const ListElement = styled.a`
+const Link = styled.a`
   margin-top: 8px;
 `;
 
@@ -20,27 +20,27 @@ const VerticalContainer = styled.div`
 function Airbnb() {
   return (
     <VerticalContainer>
-      <ListHeader href="#" title="Airbnb">
+      <HeaderLink href="#" title="Airbnb">
         Airbnb
-      </ListHeader>
-      <ListElement href="#" title="About us">
+      </HeaderLink>
+      <Link href="#" title="About us">
         About us
-      </ListElement>
-      <ListElement href="#" title="Careers">
+      </Link>
+      <Link href="#" title="Careers">
         Careers
-      </ListElement>
-      <ListElement href="#" title="Press">
+      </Link>
+      <Link href="#" title="Press">
         Press
-      </ListElement>
-      <ListElement href="#" title="Policies">
+      </Link>
+      <Link href="#" title="Policies">
         Policies
-      </ListElement>
-      <ListElement href="#" title="Help">
+      </Link>
+      <Link href="#" title="Help">
         Help
-      </ListElement>
-      <ListElement href="#" title="Diversity & Belonging">
+      </Link>
+      <Link href="#" title="Diversity & Belonging">
         Diversity & Belonging
-      </ListElement>
+      </Link>
     </VerticalContainer>
   );
 }
@@ -48,30 +48,30 @@ function Airbnb() {
 function Discover() {
   return (
     <VerticalContainer>
-      <ListHeader href="#" title="Discover">
+      <HeaderLink href="#" title="Discover">
         Discover
-      </ListHeader>
-      <ListElement href="#" title="Trust & Safety">
+      </HeaderLink>
+      <Link href="#" title="Trust & Safety">
         Trust & Safety
-      </ListElement>
-      <ListElement href="#" title="Traver Credit">
+      </Link>
+      <Link href="#" title="Traver Credit">
         Traver Credit
-      </ListElement>
-      <ListElement href="#" title="Gift Cards">
+      </Link>
+      <Link href="#" title="Gift Cards">
         Gift Cards
-      </ListElement>
-      <ListElement href="#" title="Airbnb Cititzen">
+      </Link>
+      <Link href="#" title="Airbnb Cititzen">
         Airbnb Cititzen
-      </ListElement>
-      <ListElement href="#" title="Business Travel">
+      </Link>
+      <Link href="#" title="Business Travel">
         Business Travel
-      </ListElement>
-      <ListElement href="#" title="Guidebooks">
+      </Link>
+      <Link href="#" title="Guidebooks">
         Guidebooks
-      </ListElement>
-      <ListElement href="#" title="Airbnbmag">
+      </Link>
+      <Link href="#" title="Airbnbmag">
         Airbnbmag
-      </ListElement>
+      </Link>
     </VerticalContainer>
   );
 }
@@ -79,21 +79,21 @@ function Discover() {
 function Hosting() {
   return (
     <VerticalContainer>
-      <ListHeader href="#" title="Hosting">
+      <HeaderLink href="#" title="Hosting">
         Hosting
-      </ListHeader>
-      <ListElement href="#" title="Why Host">
+      </HeaderLink>
+      <Link href="#" title="Why Host">
         Why Host
-      </ListElement>
-      <ListElement href="#" title="Hospitality">
+      </Link>
+      <Link href="#" title="Hospitality">
         Hospitality
-      </ListElement>
-      <ListElement href="#" title="Responsible Hosting">
+      </Link>
+      <Link href="#" title="Responsible Hosting">
         Responsible Hosting
-      </ListElement>
-      <ListElement href="#" title="Community Center">
+      </Link>
+      <Link href="#" title="Community Center">
         Community Center
-      </ListElement>
+      </Link>
     </VerticalContainer>
   );
 }

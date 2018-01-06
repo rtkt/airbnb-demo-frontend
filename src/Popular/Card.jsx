@@ -20,7 +20,6 @@ const Title = styled.span`
 const Price = styled.span`
   font-size: 18px;
   font-weight: 200;
-  mix-blend-mode: normal;
   opacity: 0.9;
 `;
 
