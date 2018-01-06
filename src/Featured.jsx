@@ -12,6 +12,7 @@ import photo6 from './imgs/featured-6.png';
 const Title = styled.span`
   font-size: 15px;
   font-weight: bold;
+  margin-top: 8px;
   line-height: 18px;
 `;
 
