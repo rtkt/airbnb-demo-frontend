@@ -5,6 +5,7 @@ const Container = styled.nav`
   align-items: center;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 27px;
   margin-top: 27px;
 `;
 
@@ -13,13 +14,12 @@ const Link = styled.a`
   line-height: 24px;
   padding-left: 8px;
   padding-right: 8px;
-  text-align: center;
   text-decoration: none;
 `;
 
 function Nav() {
   return (
-    <Container>
+    <Container className="middle-xs">
       <Link href="#" title="Become a host">
         Become a host
       </Link>

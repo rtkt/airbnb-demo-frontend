@@ -26,13 +26,13 @@ function Header() {
     <Container>
       <div className="container">
         <div className="row">
-          <div className="col-lg-1 col-md-1 col-xs-3 col-sm-3">
+          <div className="col-xs-2 col-md-1">
             <Logo src={logo} alt="Logo" title="Logo" />
             <a className="hidden-lg hidden-xl" href="#" title="Menu">
               <img src={menuButton} alt="Menu" title="Menu" />
             </a>
           </div>
-          <div className="col-lg-5 col-md-7 col-xs-9 col-sm-9">
+          <div className="col-xs-10 col-md-7 col-lg-5">
             <Search />
           </div>
           <div className="hidden-xs hidden-sm hidden-md col-lg-4 col-lg-offset-2">
