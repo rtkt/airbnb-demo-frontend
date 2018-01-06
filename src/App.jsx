@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Bottom from './Bottom';
 import Experiences from './Experiences';
 import Explore from './Explore';
 import Featured from './Featured';
@@ -38,6 +39,7 @@ const App = function app() {
             <LocationOpts />
             <FooterLinks />
           </div>
+          <Bottom />
         </div>
       </Footer>
     </React.Fragment>
