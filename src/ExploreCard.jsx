@@ -2,14 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Link = styled.a`
-  align-items: center;
+  flex-direction: flex-start;
   display: flex;
+  flex-direction: column;
   font-weight: bold;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    flex-direction: row;
+  }
 `;
 
 const Img = styled.img`
-  width: 96px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 96px;
+  }
 `;
 
 const Container = styled.div`
@@ -20,8 +30,16 @@ const Container = styled.div`
 `;
 
 const Text = styled.span`
-  font-size: 17px;
-  margin-left: 24px;
+  font-size: 12px;
+  margin-bottom: 18px;
+  margin-left: 12px;
+  margin-top: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    margin: 0;
+    margin-left: 24px;
+  }
 `;
 
 const ExploreCard = function exploreCard(props) {

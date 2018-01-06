@@ -14,13 +14,21 @@ const MoreButton = styled.img`
 `;
 
 const SeeAll = styled.a`
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const H1 = styled.h1`
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 export const Section = styled.section`

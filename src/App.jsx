@@ -17,7 +17,11 @@ const Footer = styled.footer`
 `;
 
 const Main = styled.main`
-  margin-top: 128px;
+  margin-top: 120px;
+
+  @media (min-width: 768px) {
+    margin-top: 128px;
+  }
 `;
 
 const App = function app() {
