@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Experiences from './Experiences';
 import Explore from './Explore';
 import Featured from './Featured';
+import Footer from './Footer';
 import Header from './Header';
 import Homes from './Homes';
 import Popular from './Popular';
@@ -24,6 +25,7 @@ const App = function app() {
           <Featured />
         </div>
       </Main>
+      <Footer />
     </React.Fragment>
   );
 };
