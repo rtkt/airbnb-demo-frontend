@@ -33,7 +33,9 @@ export const Star = styled.img`
   margin-right: 4px;
 `;
 
-export const VerticalContainer = Container.extend`
+export const VerticalContainer = styled.a`
   align-items: flex-start;
+  display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
 `;
