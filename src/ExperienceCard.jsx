@@ -12,7 +12,7 @@ const Name = styled.span`
 
 const PlaceCard = function placeCard(props) {
   return (
-    <Container>
+    <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
       <Name>
         <Price>{props.price} </Price>

@@ -18,7 +18,7 @@ const Popular = function popular() {
           <Card
             img={popularPhoto2}
             alt="Hanjan"
-            name="Korean gastropub"
+            title="Korean gastropub"
             place="Hanjan"
             price="50"
           />
@@ -27,7 +27,7 @@ const Popular = function popular() {
           <Card
             img={popularPhoto3}
             alt="Prime Meats"
-            name="German american"
+            title="German american"
             place="Prime Meats"
             price="55"
           />
@@ -36,7 +36,7 @@ const Popular = function popular() {
           <Card
             img={popularPhoto4}
             alt="Seaprice"
-            name="Fine seafood"
+            title="Fine seafood"
             place="Seaprice"
             price="70"
           />

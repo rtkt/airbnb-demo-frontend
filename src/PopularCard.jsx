@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Img, VerticalContainer as Container } from './lib/Card';
 
-const Name = styled.span`
+const Title = styled.span`
   font-size: 10px;
   font-weight: bold;
   line-height: 12px;
@@ -28,7 +28,7 @@ const PopularCard = function popularCard(props) {
   return (
     <Container>
       <Img src={props.img} alt={props.alt} title={props.alt} />
-      <Name>{props.name}</Name>
+      <Title>{props.title}</Title>
       <Place>{props.place}</Place>
       <Price>About ${props.price} per person</Price>
     </Container>

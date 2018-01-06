@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from './ExperienceCard';
 import { Heading, Section } from './lib/Section';
-import experiencePhoto1 from './imgs/experience-1.png';
-import experiencePhoto2 from './imgs/experience-2.png';
-import experiencePhoto3 from './imgs/experience-3.png';
-import experiencePhoto4 from './imgs/experience-4.png';
+import photo1 from './imgs/experience-1.png';
+import photo2 from './imgs/experience-2.png';
+import photo3 from './imgs/experience-3.png';
+import photo4 from './imgs/experience-4.png';
 
 const Experiences = function experiences() {
   return (
@@ -14,7 +14,7 @@ const Experiences = function experiences() {
         <div className="col-lg-3">
           <Card
             href="#"
-            img={experiencePhoto1}
+            img={photo1}
             alt="Forest therapy"
             title="Forest therapy"
             numOfReviews="44 reviews"
@@ -24,7 +24,7 @@ const Experiences = function experiences() {
         <div className="col-lg-3">
           <Card
             href="#"
-            img={experiencePhoto2}
+            img={photo2}
             alt="Whale watching"
             title="Whale watching"
             numOfReviews="46 reviews"
@@ -34,7 +34,7 @@ const Experiences = function experiences() {
         <div className="col-lg-3">
           <Card
             href="#"
-            img={experiencePhoto3}
+            img={photo3}
             alt="Table Mountain Summit, Cable Car Down"
             title="Table Mountain Summit, Cable Car Down"
             numOfReviews="44 reviews"
@@ -44,7 +44,7 @@ const Experiences = function experiences() {
         <div className="col-lg-3">
           <Card
             href="#"
-            img={experiencePhoto4}
+            img={photo4}
             alt="Salsa night"
             title="Salsa night"
             numOfReviews="44 reviews"

@@ -8,7 +8,7 @@ const Area = styled.span`
   font-weight: light;
 `;
 
-const Name = styled.span`
+const Title = styled.span`
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 2px;
@@ -21,12 +21,12 @@ const PushedReviews = Reviews.extend`
 
 const HomeCard = function homeCard(props) {
   return (
-    <Container>
+    <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
-      <Name>
+      <Title>
         <Price>{props.price} </Price>
-        {props.name}
-      </Name>
+        {props.title}
+      </Title>
       <Area>{props.area}</Area>
       <PushedReviews>
         <Star src={star} />
