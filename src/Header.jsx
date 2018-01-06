@@ -13,6 +13,7 @@ const Container = styled.header`
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 10;
 `;
 
 const Logo = styled.img`
