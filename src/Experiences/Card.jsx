@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } from './lib/Card';
-import star from './imgs/star.svg';
+import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } from '../lib/Card';
+import star from '../imgs/star.svg';
 
 const Name = styled.span`
   font-size: 15px;
@@ -10,7 +10,7 @@ const Name = styled.span`
   margin-top: 8px;
 `;
 
-function PlaceCard(props) {
+function Card(props) {
   return (
     <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -28,6 +28,6 @@ function PlaceCard(props) {
       </Reviews>
     </Container>
   );
-};
+}
 
-export default PlaceCard;
+export default Card;

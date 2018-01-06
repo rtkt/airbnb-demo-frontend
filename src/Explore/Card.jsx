@@ -42,7 +42,7 @@ const Text = styled.span`
   }
 `;
 
-function ExploreCard(props) {
+function Card(props) {
   return (
     <Container>
       <Link href={props.href} title={props.alt}>
@@ -53,4 +53,4 @@ function ExploreCard(props) {
   );
 }
 
-export default ExploreCard;
+export default Card;

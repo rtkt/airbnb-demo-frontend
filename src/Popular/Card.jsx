@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Img, VerticalContainer as Container } from './lib/Card';
+import { Img, VerticalContainer as Container } from '../lib/Card';
 
 const Place = styled.span`
   font-size: 10px;
@@ -24,7 +24,7 @@ const Price = styled.span`
   opacity: 0.9;
 `;
 
-function PopularCard(props) {
+function Card(props) {
   return (
     <Container href={props.href} title={props.title}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -35,4 +35,4 @@ function PopularCard(props) {
   );
 }
 
-export default PopularCard;
+export default Card;

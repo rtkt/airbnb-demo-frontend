@@ -1,10 +1,10 @@
 import React from 'react';
-import Card from './ExperienceCard';
-import { Heading, Section } from './lib/Section';
-import photo1 from './imgs/experience-1.png';
-import photo2 from './imgs/experience-2.png';
-import photo3 from './imgs/experience-3.png';
-import photo4 from './imgs/experience-4.png';
+import Card from './Card';
+import { Heading, Section } from '../lib/Section';
+import photo1 from './experience-1.png';
+import photo2 from './experience-2.png';
+import photo3 from './experience-3.png';
+import photo4 from './experience-4.png';
 
 function Experiences() {
   return (
@@ -54,6 +54,6 @@ function Experiences() {
       </div>
     </Section>
   );
-};
+}
 
 export default Experiences;

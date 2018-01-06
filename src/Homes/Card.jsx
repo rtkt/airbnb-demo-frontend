@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } from './lib/Card';
-import star from './imgs/star.svg';
+import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } from '../lib/Card';
+import star from '../imgs/star.svg';
 
 const Area = styled.span`
   font-size: 15px;
@@ -19,7 +19,7 @@ const PushedReviews = Reviews.extend`
   margin-top: 6px;
 `;
 
-function HomeCard(props) {
+function Card(props) {
   return (
     <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -40,4 +40,4 @@ function HomeCard(props) {
   );
 }
 
-export default HomeCard;
+export default Card;
