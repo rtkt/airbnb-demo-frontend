@@ -12,32 +12,42 @@ const Popular = function popular() {
       <Heading text="Popular reservations around the world" />
       <div className="row">
         <div className="col-lg-3">
-          <Card img={popularPhoto1} alt="Chumley's" name="Speakeasy" place="Chumley's" price="60" />
+          <Card
+            href="#"
+            img={popularPhoto1}
+            alt="Chumley's"
+            place="Speakeasy"
+            title="Chumley's"
+            price="60"
+          />
         </div>
         <div className="col-lg-3">
           <Card
+            href="#"
             img={popularPhoto2}
             alt="Hanjan"
-            title="Korean gastropub"
-            place="Hanjan"
+            place="Korean gastropub"
+            title="Hanjan"
             price="50"
           />
         </div>
         <div className="col-lg-3">
           <Card
+            href="#"
             img={popularPhoto3}
             alt="Prime Meats"
-            title="German american"
-            place="Prime Meats"
+            place="German american"
+            title="Prime Meats"
             price="55"
           />
         </div>
         <div className="col-lg-3">
           <Card
+            href="#"
             img={popularPhoto4}
             alt="Seaprice"
-            title="Fine seafood"
-            place="Seaprice"
+            place="Fine seafood"
+            title="Seaprice"
             price="70"
           />
         </div>

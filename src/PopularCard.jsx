@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Img, VerticalContainer as Container } from './lib/Card';
 
-const Title = styled.span`
+const Place = styled.span`
   font-size: 10px;
   font-weight: bold;
   line-height: 12px;
@@ -10,7 +10,7 @@ const Title = styled.span`
   text-transform: uppercase;
 `;
 
-const Place = styled.span`
+const Title = styled.span`
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 4px;
@@ -26,10 +26,10 @@ const Price = styled.span`
 
 const PopularCard = function popularCard(props) {
   return (
-    <Container>
+    <Container href={props.href} title={props.title}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
-      <Title>{props.title}</Title>
       <Place>{props.place}</Place>
+      <Title>{props.title}</Title>
       <Price>About ${props.price} per person</Price>
     </Container>
   );
