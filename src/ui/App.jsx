@@ -4,7 +4,7 @@ import Bottom from './Bottom';
 import Experiences from './Experiences';
 import Explore from './Explore';
 import Featured from './Featured';
-import FooterLinks from './FooterLinks';
+import { Airbnb, Discover, Hosting } from './FooterLinks';
 import Header from './Header';
 import Homes from './Homes';
 import LocationOpts from './LocationOpts';
@@ -40,8 +40,18 @@ function App() {
       <Footer>
         <div className="container">
           <div className="row">
-            <LocationOpts />
-            <FooterLinks />
+            <div className="col-xs col-md-3">
+              <LocationOpts />
+            </div>
+            <div className="hidden-xs col-md-2 col-md-offset-1">
+              <Airbnb />
+            </div>
+            <div className="hidden-xs col-md-2 col-md-offset-1">
+              <Discover />
+            </div>
+            <div className="hidden-xs col-md-2 col-md-offset-1">
+              <Hosting />
+            </div>
           </div>
           <Bottom />
         </div>

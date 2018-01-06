@@ -20,16 +20,14 @@ const Combobox = styled.select`
 
 function LocationOpts() {
   return (
-    <div className="col-lg-3">
-      <form>
-        <Combobox name="language">
-          <option value="English">English</option>
-        </Combobox>
-        <Combobox name="currency">
-          <option value="United States dollar">United States dollar</option>
-        </Combobox>
-      </form>
-    </div>
+    <form>
+      <Combobox name="language">
+        <option value="English">English</option>
+      </Combobox>
+      <Combobox name="currency">
+        <option value="United States dollar">United States dollar</option>
+      </Combobox>
+    </form>
   );
 }
 

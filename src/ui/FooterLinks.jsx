@@ -17,7 +17,7 @@ const VerticalContainer = styled.div`
   flex-wrap: nowrap;
 `;
 
-function Airbnb() {
+export function Airbnb() {
   return (
     <VerticalContainer>
       <HeaderLink href="#" title="Airbnb">
@@ -45,7 +45,7 @@ function Airbnb() {
   );
 }
 
-function Discover() {
+export function Discover() {
   return (
     <VerticalContainer>
       <HeaderLink href="#" title="Discover">
@@ -76,7 +76,7 @@ function Discover() {
   );
 }
 
-function Hosting() {
+export function Hosting() {
   return (
     <VerticalContainer>
       <HeaderLink href="#" title="Hosting">
@@ -98,20 +98,4 @@ function Hosting() {
   );
 }
 
-function FooterLinks() {
-  return (
-    <React.Fragment>
-      <div className="col-lg-2 col-lg-offset-1">
-        <Airbnb />
-      </div>
-      <div className="col-lg-2 col-lg-offset-1">
-        <Discover />
-      </div>
-      <div className="col-lg-2 col-lg-offset-1">
-        <Hosting />
-      </div>
-    </React.Fragment>
-  );
-}
-
-export default FooterLinks;
+export default { Airbnb, Discover, Hosting };

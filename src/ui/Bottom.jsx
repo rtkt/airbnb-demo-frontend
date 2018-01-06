@@ -5,19 +5,34 @@ import instagram from '../imgs/instagram.svg';
 import logo from '../imgs/white-logo.svg';
 import twitter from '../imgs/twitter.svg';
 
-const Container = styled.div`
+const Row = styled.div`
   align-items: center;
   color: #636363;
   display: flex;
   font-size: 15px;
 `;
 
+const Hr = styled.hr`
+  background: #484848;
+  height: 1px;
+  opacity: 0.08;
+  width: 100%;
+`;
+
 const Icon = styled.img`
-  margin-left: 12px;
+  margin-left: 8px;
+
+  @media (min-width: 768px) {
+    margin-left: 12px;
+  }
 `;
 
 const Link = styled.a`
-  margin-right: 16px;
+  margin-right: 12px;
+
+  @media (min-width: 768px) {
+    margin-left: 16px;
+  }
 `;
 
 const Logo = styled.img`
@@ -25,7 +40,11 @@ const Logo = styled.img`
 `;
 
 const Social = styled.div`
-  margin-left: 24px;
+  margin-left: 12px;
+
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -35,34 +54,37 @@ const Wrapper = styled.div`
 
 function Bottom() {
   return (
-    <Wrapper className="row">
-      <Container className="start-xs col-lg-2">
-        <Logo src={logo} alt="Logo" title="Logo" />
-        <span>© Airbnb Inc.</span>
-      </Container>
-      <Container className="end-xs col-lg-4 col-lg-offset-6">
-        <Link href="#" title="Terms">
-          Terms
-        </Link>
-        <Link href="#" title="Privacy">
-          Privacy
-        </Link>
-        <Link href="#" title="Site Map">
-          Site Map
-        </Link>
-        <Social>
-          <a href="#" title="Facebook">
-            <Icon src={facebook} alt="Facebook" title="Facebook" />
-          </a>
-          <a href="#" title="Twitter">
-            <Icon src={twitter} alt="Twitter" title="Twitter" />
-          </a>
-          <a href="#" title="Instagram">
-            <Icon src={instagram} alt="Instagram" title="Instagram" />
-          </a>
-        </Social>
-      </Container>
-    </Wrapper>
+    <React.Fragment>
+      <Hr />
+      <Wrapper className="row">
+        <Row className="start-xs col-xs col-md-2">
+          <Logo src={logo} alt="Logo" title="Logo" />
+          <span>© Airbnb Inc.</span>
+        </Row>
+        <Row className="start-xs col-xs end-md col-md-5 col-lg-4 col-lg-offset-6">
+          <Link href="#" title="Terms">
+            Terms
+          </Link>
+          <Link href="#" title="Privacy">
+            Privacy
+          </Link>
+          <Link href="#" title="Site Map">
+            Site Map
+          </Link>
+          <Social>
+            <a href="#" title="Facebook">
+              <Icon src={facebook} alt="Facebook" title="Facebook" />
+            </a>
+            <a href="#" title="Twitter">
+              <Icon src={twitter} alt="Twitter" title="Twitter" />
+            </a>
+            <a href="#" title="Instagram">
+              <Icon src={instagram} alt="Instagram" title="Instagram" />
+            </a>
+          </Social>
+        </Row>
+      </Wrapper>
+    </React.Fragment>
   );
 }
 
