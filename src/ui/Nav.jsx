@@ -17,7 +17,7 @@ const Link = styled.a`
   text-decoration: none;
 `;
 
-function NavLinks() {
+function Nav() {
   return (
     <Container>
       <Link href="#" title="Become a host">
@@ -36,4 +36,4 @@ function NavLinks() {
   );
 }
 
-export default NavLinks;
+export default Nav;

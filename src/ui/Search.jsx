@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import searchIcon from '../imgs/magnifier.svg';
 
 const SearchBox = styled.form`
-  align-items: center;
   border: solid 1px rgba(72, 72, 72, 0.2);
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(72, 72, 72, 0.08);
@@ -22,7 +21,7 @@ const Input = styled.input`
 
 function SearchField() {
   return (
-    <SearchBox>
+    <SearchBox className="middle-xs">
       <img src={searchIcon} alt="Search icon" title="Search icon" />
       <Input type="text" name="location" placeholder="Try &quot;Miami&quot;" />
     </SearchBox>

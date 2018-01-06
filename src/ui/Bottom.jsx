@@ -16,20 +16,12 @@ const Icon = styled.img`
   margin-left: 12px;
 `;
 
-const Left = Container.extend`
-  justify-content: flex-start;
-`;
-
 const Link = styled.a`
   margin-right: 16px;
 `;
 
 const Logo = styled.img`
   margin-right: 12px;
-`;
-
-const Right = Container.extend`
-  justify-content: flex-end;
 `;
 
 const Social = styled.div`
@@ -44,11 +36,11 @@ const Wrapper = styled.div`
 function Bottom() {
   return (
     <Wrapper className="row">
-      <Left className="col-lg-2">
+      <Container className="start-xs col-lg-2">
         <Logo src={logo} alt="Logo" title="Logo" />
         <span>© Airbnb Inc.</span>
-      </Left>
-      <Right className="col-lg-4 col-lg-offset-6">
+      </Container>
+      <Container className="end-xs col-lg-4 col-lg-offset-6">
         <Link href="#" title="Terms">
           Terms
         </Link>
@@ -69,7 +61,7 @@ function Bottom() {
             <Icon src={instagram} alt="Instagram" title="Instagram" />
           </a>
         </Social>
-      </Right>
+      </Container>
     </Wrapper>
   );
 }

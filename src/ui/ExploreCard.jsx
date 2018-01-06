@@ -9,7 +9,6 @@ const Link = styled.a`
   text-decoration: none;
 
   @media (min-width: 768px) {
-    align-items: center;
     flex-direction: row;
   }
 `;
@@ -45,7 +44,7 @@ const Text = styled.span`
 function Card(props) {
   return (
     <Container>
-      <Link href={props.href} title={props.alt}>
+      <Link className="middle-md" href={props.href} title={props.alt}>
         <Img src={props.img} alt={props.alt} title={props.alt} />
         <Text>{props.title}</Text>
       </Link>

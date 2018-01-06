@@ -15,24 +15,10 @@ const Container = styled.header`
   z-index: 10;
 `;
 
-const DesktopOnly = styled.div`
-  display: none;
-
-  @media (min-width: 992px) {
-    display: block;
-  }
-`;
-
 const Logo = styled.img`
   padding-top: 24px;
   padding-bottom: 24px;
   vertical-align: middle;
-`;
-
-const Menu = styled.a`
-  @media (min-width: 992px) {
-    display: none;
-  }
 `;
 
 function Header() {
@@ -42,16 +28,16 @@ function Header() {
         <div className="row">
           <div className="col-lg-1 col-md-1 col-xs-3 col-sm-3">
             <Logo src={logo} alt="Logo" title="Logo" />
-            <Menu href="#" title="Menu">
+            <a className="hidden-lg hidden-xl" href="#" title="Menu">
               <img src={menuButton} alt="Menu" title="Menu" />
-            </Menu>
+            </a>
           </div>
           <div className="col-lg-5 col-md-7 col-xs-9 col-sm-9">
             <Search />
           </div>
-          <DesktopOnly className="col-lg-4 col-lg-offset-2">
+          <div className="hidden-xs hidden-sm hidden-md col-lg-4 col-lg-offset-2">
             <Nav />
-          </DesktopOnly>
+          </div>
         </div>
       </div>
     </Container>
