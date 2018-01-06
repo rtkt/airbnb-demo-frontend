@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Search from './Search';
 import Nav from './Nav';
-import logo from './imgs/logo.svg';
-import menuButton from './imgs/menuButton.svg';
+import logo from '../imgs/logo.svg';
+import menuButton from '../imgs/menuButton.svg';
 
 const Container = styled.header`
   background-color: white;

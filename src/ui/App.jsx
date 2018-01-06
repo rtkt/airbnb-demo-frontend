@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Bottom from './Bottom';
-import Experiences from './Experiences/';
-import Explore from './Explore/';
+import Experiences from './Experiences';
+import Explore from './Explore';
 import Featured from './Featured';
 import FooterLinks from './FooterLinks';
 import Header from './Header';
-import Homes from './Homes/';
+import Homes from './Homes';
 import LocationOpts from './LocationOpts';
-import Popular from './Popular/';
+import Popular from './Popular';
 
 const Footer = styled.footer`
   box-shadow: 0px -0.5px 0px rgba(72, 72, 72, 0.3);

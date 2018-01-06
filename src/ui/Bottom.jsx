@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import facebook from './imgs/facebook.svg';
-import instagram from './imgs/instagram.svg';
-import logo from './imgs/white-logo.svg';
-import twitter from './imgs/twitter.svg';
+import facebook from '../imgs/facebook.svg';
+import instagram from '../imgs/instagram.svg';
+import logo from '../imgs/white-logo.svg';
+import twitter from '../imgs/twitter.svg';
 
 const Container = styled.div`
   align-items: center;

@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H1, Section } from './lib/Section';
-import { VerticalContainer as Container, Img } from './lib/Card';
-import photo1 from './imgs/featured-1.png';
-import photo2 from './imgs/featured-2.png';
-import photo3 from './imgs/featured-3.png';
-import photo4 from './imgs/featured-4.png';
-import photo5 from './imgs/featured-5.png';
-import photo6 from './imgs/featured-6.png';
+import { H1, Section } from '../lib/Section';
+import { VerticalContainer as Container, Img } from '../lib/Card';
+import photo1 from '../imgs/featured-1.png';
+import photo2 from '../imgs/featured-2.png';
+import photo3 from '../imgs/featured-3.png';
+import photo4 from '../imgs/featured-4.png';
+import photo5 from '../imgs/featured-5.png';
+import photo6 from '../imgs/featured-6.png';
 
 const Title = styled.span`
   font-size: 15px;
