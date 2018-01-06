@@ -11,7 +11,7 @@ const Experiences = function experiences() {
     <Section>
       <Heading text="Experiences" />
       <div className="row">
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
           <Card
             href="#"
             img={photo1}
@@ -21,7 +21,7 @@ const Experiences = function experiences() {
             price="29"
           />
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
           <Card
             href="#"
             img={photo2}
@@ -31,7 +31,7 @@ const Experiences = function experiences() {
             price="69"
           />
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
           <Card
             href="#"
             img={photo3}
@@ -41,7 +41,7 @@ const Experiences = function experiences() {
             price="69"
           />
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6">
           <Card
             href="#"
             img={photo4}

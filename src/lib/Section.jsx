@@ -32,7 +32,11 @@ export const H1 = styled.h1`
 `;
 
 export const Section = styled.section`
-  margin-top: 48px;
+  margin-top: 40px;
+
+  @media (min-width: 768px) {
+    margin-top: 48px;
+  }
 `;
 
 const H1NoMargins = H1.extend`
