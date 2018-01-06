@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Experiences from './Experiences';
 import Explore from './Explore';
+import Featured from './Featured';
 import Header from './Header';
 import Homes from './Homes';
 import Popular from './Popular';
@@ -20,6 +21,7 @@ const App = function app() {
           <Experiences />
           <Homes />
           <Popular />
+          <Featured />
         </div>
       </Main>
     </React.Fragment>
