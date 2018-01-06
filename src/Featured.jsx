@@ -16,16 +16,16 @@ const Title = styled.span`
   line-height: 18px;
 `;
 
-const Card = function card(props) {
+function Card(props) {
   return (
     <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
       <Title>{props.title}</Title>
     </Container>
   );
-};
+}
 
-const Featured = function featured() {
+function Featured() {
   return (
     <Section>
       <H1>Featured destinations</H1>
@@ -51,6 +51,6 @@ const Featured = function featured() {
       </div>
     </Section>
   );
-};
+}
 
 export default Featured;

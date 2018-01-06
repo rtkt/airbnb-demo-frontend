@@ -6,7 +6,7 @@ import popularPhoto2 from './imgs/popular-2.png';
 import popularPhoto3 from './imgs/popular-3.png';
 import popularPhoto4 from './imgs/popular-4.png';
 
-const Popular = function popular() {
+function Popular() {
   return (
     <Section>
       <Heading text="Popular reservations around the world" />
@@ -54,6 +54,6 @@ const Popular = function popular() {
       </div>
     </Section>
   );
-};
+}
 
 export default Popular;

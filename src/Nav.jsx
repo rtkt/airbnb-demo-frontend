@@ -17,7 +17,7 @@ const Link = styled.a`
   text-decoration: none;
 `;
 
-const NavLinks = function navLinks() {
+function NavLinks() {
   return (
     <Container>
       <Link href="#" title="Become a host">
@@ -34,6 +34,6 @@ const NavLinks = function navLinks() {
       </Link>
     </Container>
   );
-};
+}
 
 export default NavLinks;

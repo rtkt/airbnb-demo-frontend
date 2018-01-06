@@ -18,7 +18,7 @@ const Combobox = styled.select`
   width: 100%;
 `;
 
-const LocationOpts = function locationOpts() {
+function LocationOpts() {
   return (
     <div className="col-lg-3">
       <form>
@@ -31,6 +31,6 @@ const LocationOpts = function locationOpts() {
       </form>
     </div>
   );
-};
+}
 
 export default LocationOpts;

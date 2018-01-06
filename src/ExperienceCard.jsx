@@ -10,7 +10,7 @@ const Name = styled.span`
   margin-top: 8px;
 `;
 
-const PlaceCard = function placeCard(props) {
+function PlaceCard(props) {
   return (
     <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />

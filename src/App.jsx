@@ -24,11 +24,11 @@ const Main = styled.main`
   }
 `;
 
-const App = function app() {
+function App() {
   return (
     <React.Fragment>
-      <Header key="header" />
-      <Main key="main">
+      <Header />
+      <Main>
         <div className="container">
           <Explore />
           <Experiences />

@@ -41,7 +41,7 @@ const Wrapper = styled.div`
   margin-top: 82px;
 `;
 
-const Bottom = function bottom() {
+function Bottom() {
   return (
     <Wrapper className="row">
       <Left className="col-lg-2">
@@ -72,6 +72,6 @@ const Bottom = function bottom() {
       </Right>
     </Wrapper>
   );
-};
+}
 
 export default Bottom;

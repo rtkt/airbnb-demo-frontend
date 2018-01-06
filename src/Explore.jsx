@@ -18,7 +18,7 @@ const Row = styled.div`
   }
 `;
 
-const Explore = function explore() {
+function Explore() {
   return (
     <Section>
       <H1>Explore</H1>
@@ -35,6 +35,6 @@ const Explore = function explore() {
       </Row>
     </Section>
   );
-};
+}
 
 export default Explore;

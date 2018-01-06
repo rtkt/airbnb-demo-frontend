@@ -35,7 +35,7 @@ const Menu = styled.a`
   }
 `;
 
-const Header = function header() {
+function Header() {
   return (
     <Container>
       <div className="container">
@@ -56,6 +56,6 @@ const Header = function header() {
       </div>
     </Container>
   );
-};
+}
 
 export default Header;

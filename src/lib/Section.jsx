@@ -44,16 +44,16 @@ const H1NoMargins = H1.extend`
   margin-top: 0;
 `;
 
-export const Heading = function heading(props) {
+export function Heading(props) {
   return (
     <HeadingWrapper>
       <H1NoMargins>{props.text}</H1NoMargins>
       <More />
     </HeadingWrapper>
   );
-};
+}
 
-export const More = function more() {
+export function More() {
   return (
     <div>
       <SeeAll href="#" title="See all">
@@ -62,4 +62,4 @@ export const More = function more() {
       </SeeAll>
     </div>
   );
-};
+}

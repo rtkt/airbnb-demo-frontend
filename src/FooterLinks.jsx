@@ -17,7 +17,7 @@ const VerticalContainer = styled.div`
   flex-wrap: nowrap;
 `;
 
-const Airbnb = function airbnb() {
+function Airbnb() {
   return (
     <VerticalContainer>
       <ListHeader href="#" title="Airbnb">
@@ -43,9 +43,9 @@ const Airbnb = function airbnb() {
       </ListElement>
     </VerticalContainer>
   );
-};
+}
 
-const Discover = function discover() {
+function Discover() {
   return (
     <VerticalContainer>
       <ListHeader href="#" title="Discover">
@@ -74,9 +74,9 @@ const Discover = function discover() {
       </ListElement>
     </VerticalContainer>
   );
-};
+}
 
-const Hosting = function hosting() {
+function Hosting() {
   return (
     <VerticalContainer>
       <ListHeader href="#" title="Hosting">
@@ -96,9 +96,9 @@ const Hosting = function hosting() {
       </ListElement>
     </VerticalContainer>
   );
-};
+}
 
-const FooterLinks = function footerLinks() {
+function FooterLinks() {
   return (
     <React.Fragment>
       <div className="col-lg-2 col-lg-offset-1">
@@ -112,6 +112,6 @@ const FooterLinks = function footerLinks() {
       </div>
     </React.Fragment>
   );
-};
+}
 
 export default FooterLinks;

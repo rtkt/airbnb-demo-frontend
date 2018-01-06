@@ -20,13 +20,13 @@ const Input = styled.input`
   padding-left: 16px;
 `;
 
-const SearchField = function searchField() {
+function SearchField() {
   return (
     <SearchBox>
       <img src={searchIcon} alt="Search icon" title="Search icon" />
       <Input type="text" name="location" placeholder="Try &quot;Miami&quot;" />
     </SearchBox>
   );
-};
+}
 
 export default SearchField;

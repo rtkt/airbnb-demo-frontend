@@ -19,7 +19,7 @@ const PushedReviews = Reviews.extend`
   margin-top: 6px;
 `;
 
-const HomeCard = function homeCard(props) {
+function HomeCard(props) {
   return (
     <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -38,6 +38,6 @@ const HomeCard = function homeCard(props) {
       </PushedReviews>
     </Container>
   );
-};
+}
 
 export default HomeCard;

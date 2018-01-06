@@ -6,7 +6,7 @@ import photo2 from './imgs/experience-2.png';
 import photo3 from './imgs/experience-3.png';
 import photo4 from './imgs/experience-4.png';
 
-const Experiences = function experiences() {
+function Experiences() {
   return (
     <Section>
       <Heading text="Experiences" />

@@ -24,7 +24,7 @@ const Price = styled.span`
   opacity: 0.9;
 `;
 
-const PopularCard = function popularCard(props) {
+function PopularCard(props) {
   return (
     <Container href={props.href} title={props.title}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -33,6 +33,6 @@ const PopularCard = function popularCard(props) {
       <Price>About ${props.price} per person</Price>
     </Container>
   );
-};
+}
 
 export default PopularCard;

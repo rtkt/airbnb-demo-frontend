@@ -5,7 +5,7 @@ import photo1 from './imgs/home-1.png';
 import photo2 from './imgs/home-2.png';
 import photo3 from './imgs/home-3.png';
 
-const Homes = function homes() {
+function Homes() {
   return (
     <Section>
       <Heading text="Homes" />
@@ -46,6 +46,6 @@ const Homes = function homes() {
       </div>
     </Section>
   );
-};
+}
 
 export default Homes;
