@@ -11,7 +11,7 @@ function Popular() {
     <Section>
       <Heading text="Popular reservations around the world" />
       <Slider className="row">
-        <div className="col-lg-3">
+        <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
             href="#"
             img={popularPhoto1}
@@ -21,7 +21,7 @@ function Popular() {
             price="60"
           />
         </div>
-        <div className="col-lg-3">
+        <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
             href="#"
             img={popularPhoto2}
@@ -31,7 +31,7 @@ function Popular() {
             price="50"
           />
         </div>
-        <div className="col-lg-3">
+        <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
             href="#"
             img={popularPhoto3}
@@ -41,7 +41,7 @@ function Popular() {
             price="55"
           />
         </div>
-        <div className="col-lg-3">
+        <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
             href="#"
             img={popularPhoto4}

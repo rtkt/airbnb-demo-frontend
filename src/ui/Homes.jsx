@@ -10,7 +10,7 @@ function Homes() {
     <Section>
       <Heading text="Homes" />
       <Slider className="row">
-        <div className="col-lg-4">
+        <div className="col-xs-7 col-md-5 col-lg-4">
           <Card
             href="#"
             img={photo1}
@@ -21,7 +21,7 @@ function Homes() {
             price="82"
           />
         </div>
-        <div className="col-lg-4">
+        <div className="col-xs-7 col-md-5 col-lg-4">
           <Card
             href="#"
             img={photo2}
@@ -32,7 +32,7 @@ function Homes() {
             price="82"
           />
         </div>
-        <div className="col-lg-4">
+        <div className="col-xs-7 col-md-5 col-lg-4">
           <Card
             href="#"
             img={photo3}

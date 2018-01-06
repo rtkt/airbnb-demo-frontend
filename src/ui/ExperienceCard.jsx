@@ -4,10 +4,14 @@ import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } fro
 import star from '../imgs/star.svg';
 
 const Name = styled.span`
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 200;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   margin-top: 7px;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 function Card(props) {

@@ -3,24 +3,36 @@ import styled from 'styled-components';
 import { Img, VerticalContainer as Container } from '../lib/Card';
 
 const Place = styled.span`
-  font-size: 10px;
+  font-size: 8px;
   font-weight: bold;
-  line-height: 12px;
-  margin-top: 5px;
+  margin-top: 6px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 10px;
+    margin-top: 11px;
+  }
 `;
 
 const Title = styled.span`
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 4px;
-  margin-top: 2px;
+  margin-top: 1px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 const Price = styled.span`
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 200;
   opacity: 0.9;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 function Card(props) {

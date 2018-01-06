@@ -4,15 +4,23 @@ import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } fro
 import star from '../imgs/star.svg';
 
 const Area = styled.span`
-  font-size: 15px;
+  font-size: 12px;
   font-weight: light;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 const Title = styled.span`
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   margin-bottom: 2px;
   margin-top: 7px;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 const PushedReviews = Reviews.extend`
