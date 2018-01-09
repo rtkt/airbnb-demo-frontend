@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './HomeCard';
-import { Heading, Section, Slider, SliderButton } from '../lib/Section';
+import { CompactH1, SeeAll, SeeAllContainer, Section, Slider, SliderButton } from '../lib/Section';
 import photo1 from '../imgs/home-1.png';
 import photo2 from '../imgs/home-2.png';
 import photo3 from '../imgs/home-3.png';
@@ -8,7 +8,12 @@ import photo3 from '../imgs/home-3.png';
 function Homes() {
   return (
     <Section>
-      <Heading text="Homes" />
+      <CompactH1>
+        Homes
+        <SeeAllContainer to="/homes">
+          <SeeAll />
+        </SeeAllContainer>
+      </CompactH1>
       <Slider className="row">
         <div className="col-xs-7 col-md-5 col-lg-4">
           <Card

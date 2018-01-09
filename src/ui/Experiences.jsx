@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './ExperienceCard';
-import { Heading, Section, Slider, SliderButton } from '../lib/Section';
+import { CompactH1, SeeAll, SeeAllContainer, Section, Slider, SliderButton } from '../lib/Section';
 import photo1 from '../imgs/experience-1.png';
 import photo2 from '../imgs/experience-2.png';
 import photo3 from '../imgs/experience-3.png';
@@ -9,7 +9,12 @@ import photo4 from '../imgs/experience-4.png';
 function Experiences() {
   return (
     <Section>
-      <Heading text="Experiences" />
+      <CompactH1>
+        Experiences
+        <SeeAllContainer to="/experiences">
+          <SeeAll />
+        </SeeAllContainer>
+      </CompactH1>
       <Slider className="row">
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card

@@ -1,19 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import morePic from '../imgs/seeAllButton.svg';
-
-const HeadingWrapper = styled.div`
-  align-items: baseline;
-  display: flex;
-  margin-bottom: 24px;
-  justify-content: space-between;
-`;
 
 const MoreButton = styled.img`
   margin-left: 8px;
 `;
 
-const SeeAll = styled.a`
+export const SeeAllContainer = styled(Link)`
   font-size: 12px;
   text-decoration: none;
 
@@ -68,25 +62,18 @@ export const SliderButton = styled.button`
   }
 `;
 
-const CompactH1 = H1.extend`
+export const CompactH1 = H1.extend`
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0;
   margin-top: 0;
 `;
 
-export function Heading(props) {
+export function SeeAll() {
   return (
-    <HeadingWrapper>
-      <CompactH1>{props.text}</CompactH1>
-      <More />
-    </HeadingWrapper>
-  );
-}
-
-function More() {
-  return (
-    <SeeAll href="#" title="See all">
+    <React.Fragment>
       <span>See all</span>
       <MoreButton src={morePic} alt="See all" title="See all" />
-    </SeeAll>
+    </React.Fragment>
   );
 }
