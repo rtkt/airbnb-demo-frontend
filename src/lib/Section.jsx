@@ -16,12 +16,26 @@ export const SeeAllContainer = styled(Link)`
   }
 `;
 
+export const Footer = styled.footer`
+  box-shadow: 0px -0.5px 0px rgba(72, 72, 72, 0.3);
+  margin-top: 64px;
+  padding-top: 48px;
+`;
+
 export const H1 = styled.h1`
   font-size: 24px;
   font-weight: bold;
 
   @media (min-width: 768px) {
     font-size: 32px;
+  }
+`;
+
+export const Main = styled.main`
+  margin-top: 120px;
+
+  @media (min-width: 768px) {
+    margin-top: 128px;
   }
 `;
 
