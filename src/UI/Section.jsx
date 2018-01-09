@@ -25,14 +25,6 @@ export const H1 = styled.h1`
   }
 `;
 
-export const Main = styled.main`
-  margin-top: 120px;
-
-  @media (min-width: 768px) {
-    margin-top: 128px;
-  }
-`;
-
 export const Section = styled.section`
   margin-top: 40px;
   position: relative;

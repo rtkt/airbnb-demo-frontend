@@ -1,5 +1,9 @@
 import React from 'react';
-import { Main } from '../UI/Section';
+import styled from 'styled-components';
+
+const Main = styled.main`
+  margin-top: 160px;
+`;
 
 function HomesPage() {
   return (
