@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from './ExploreCard';
-import { H1, Section } from '../lib/Section';
-import photo1 from '../imgs/explore-1.png';
-import photo2 from '../imgs/explore-2.png';
-import photo3 from '../imgs/explore-3.png';
+import Card from './Card';
+import { H1, Section } from '../../UI/Section';
+import photo1 from './explore-1.png';
+import photo2 from './explore-2.png';
+import photo3 from './explore-3.png';
 
 const Row = styled.div`
   flex-wrap: nowrap;

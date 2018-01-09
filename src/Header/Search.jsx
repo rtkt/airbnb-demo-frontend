@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import icon from '../imgs/magnifier.svg';
+import icon from './magnifier.svg';
 
 const Container = styled.form`
   display: flex;

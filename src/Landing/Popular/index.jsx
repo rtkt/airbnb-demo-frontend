@@ -1,20 +1,27 @@
 import React from 'react';
-import Card from './PopularCard';
-import { CompactH1, SeeAll, SeeAllContainer, Section, Slider, SliderButton } from '../lib/Section';
-import popularPhoto1 from '../imgs/popular-1.png';
-import popularPhoto2 from '../imgs/popular-2.png';
-import popularPhoto3 from '../imgs/popular-3.png';
-import popularPhoto4 from '../imgs/popular-4.png';
+import Card from './Card';
+import {
+  H1Wrapper,
+  SeeAll,
+  SeeAllContainer,
+  Section,
+  Slider,
+  SliderButton,
+} from '../../UI/Section';
+import popularPhoto1 from './popular-1.png';
+import popularPhoto2 from './popular-2.png';
+import popularPhoto3 from './popular-3.png';
+import popularPhoto4 from './popular-4.png';
 
 function Popular() {
   return (
     <Section>
-      <CompactH1>
+      <H1Wrapper>
         Popular reservations around the world
         <SeeAllContainer to="/popular">
           <SeeAll />
         </SeeAllContainer>
-      </CompactH1>
+      </H1Wrapper>
       <Slider className="row">
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card

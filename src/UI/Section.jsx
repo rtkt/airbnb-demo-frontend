@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import morePic from '../imgs/seeAllButton.svg';
+import morePic from './seeAllButton.svg';
 
 const MoreButton = styled.img`
   margin-left: 8px;
@@ -14,12 +14,6 @@ export const SeeAllContainer = styled(Link)`
   @media (min-width: 768px) {
     font-size: 14px;
   }
-`;
-
-export const Footer = styled.footer`
-  box-shadow: 0px -0.5px 0px rgba(72, 72, 72, 0.3);
-  margin-top: 64px;
-  padding-top: 48px;
 `;
 
 export const H1 = styled.h1`
@@ -76,10 +70,10 @@ export const SliderButton = styled.button`
   }
 `;
 
-export const CompactH1 = H1.extend`
+export const H1Wrapper = H1.extend`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0;
+  margin-bottom: 24px;
   margin-top: 0;
 `;
 

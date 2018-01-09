@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import arrow from '../imgs/comboboxButton.svg';
+import arrow from '../UI/comboboxButton.svg';
 
 const Combobox = styled.select`
   appearance: none;

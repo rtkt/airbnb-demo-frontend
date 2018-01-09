@@ -1,20 +1,27 @@
 import React from 'react';
-import Card from './ExperienceCard';
-import { CompactH1, SeeAll, SeeAllContainer, Section, Slider, SliderButton } from '../lib/Section';
-import photo1 from '../imgs/experience-1.png';
-import photo2 from '../imgs/experience-2.png';
-import photo3 from '../imgs/experience-3.png';
-import photo4 from '../imgs/experience-4.png';
+import Card from './Card';
+import {
+  H1Wrapper,
+  SeeAll,
+  SeeAllContainer,
+  Section,
+  Slider,
+  SliderButton,
+} from '../../UI/Section';
+import photo1 from './experience-1.png';
+import photo2 from './experience-2.png';
+import photo3 from './experience-3.png';
+import photo4 from './experience-4.png';
 
 function Experiences() {
   return (
     <Section>
-      <CompactH1>
+      <H1Wrapper>
         Experiences
         <SeeAllContainer to="/experiences">
           <SeeAll />
         </SeeAllContainer>
-      </CompactH1>
+      </H1Wrapper>
       <Slider className="row">
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card

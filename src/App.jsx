@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Homes from './HomesPage';
-import Landing from './LandingPage';
-import Header from './Header';
+import Homes from './Homes/';
+import Landing from './Landing/';
+import Header from './Header/';
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import facebook from '../imgs/facebook.svg';
-import instagram from '../imgs/instagram.svg';
-import logo from '../imgs/white-logo.svg';
-import twitter from '../imgs/twitter.svg';
+import facebook from './facebook.svg';
+import instagram from './instagram.svg';
+import logo from './white-logo.svg';
+import twitter from './twitter.svg';
 
 const Row = styled.div`
   align-items: center;
@@ -52,7 +52,7 @@ const Wrapper = styled.div`
   margin-top: 82px;
 `;
 
-function Bottom() {
+function Basement() {
   return (
     <React.Fragment>
       <Hr />
@@ -88,4 +88,4 @@ function Bottom() {
   );
 }
 
-export default Bottom;
+export default Basement;

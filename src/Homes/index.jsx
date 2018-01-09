@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main } from '../lib/Section';
+import { Main } from '../UI/Section';
 
 function HomesPage() {
   return (

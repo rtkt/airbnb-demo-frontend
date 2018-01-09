@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Img, VerticalContainer as Container } from '../lib/Card';
+import { Img, VerticalContainer as Container } from '../../UI/Card';
 
 const Place = styled.span`
   font-size: 8px;

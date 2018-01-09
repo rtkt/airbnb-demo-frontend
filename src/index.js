@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'normalize.css';
 import 'flexboxgrid2/flexboxgrid2.css';
 import './common.css';
-import App from './ui/App';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 /* global document */
