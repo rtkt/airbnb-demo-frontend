@@ -25,9 +25,9 @@ body {
 }
 
 body,
-:link,
-:hover,
-:visited {
+a:link,
+a:hover,
+a:visited {
   color: #383838;
   text-decoration: none;
 }
