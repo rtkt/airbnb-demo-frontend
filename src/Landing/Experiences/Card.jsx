@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } from '../../UI/Card';
+import breakpoints from '../../UI/globals';
 import star from '../../UI/star.svg';
 
 const Name = styled.span`
@@ -9,7 +10,7 @@ const Name = styled.span`
   margin-bottom: 5px;
   margin-top: 7px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     font-size: 15px;
   }
 `;

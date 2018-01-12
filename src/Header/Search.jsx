@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../UI/globals';
 import icon from './magnifier.svg';
 
 const Container = styled.form`
@@ -20,13 +21,13 @@ const Input = styled.input`
   font-size: 16px;
   padding: 12px 0 12px 35px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     background-size: 20px 21px;
     background-position: 16px center;
     padding-left: 49px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: ${breakpoints.lg}px) {
     padding-left: 53px;
   }
 `;

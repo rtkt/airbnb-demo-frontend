@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../UI/globals';
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
 import logo from './white-logo.svg';
@@ -22,7 +23,7 @@ const Hr = styled.hr`
 const Icon = styled.img`
   margin-left: 8px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     margin-left: 12px;
   }
 `;
@@ -35,7 +36,7 @@ const Link = styled.a`
     color: #636363;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     margin-left: 16px;
   }
 `;
@@ -47,7 +48,7 @@ const Logo = styled.img`
 const Social = styled.div`
   margin-left: 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     margin-left: 24px;
   }
 `;
@@ -62,11 +63,11 @@ export default function Basement() {
     <React.Fragment>
       <Hr />
       <Wrapper className="row">
-        <Row className="start-xs col-xs col-md-2">
+        <Row className="start-xs col-xs-12 col-md-3">
           <Logo src={logo} alt="Logo" title="Logo" />
           <span>© Airbnb Inc.</span>
         </Row>
-        <Row className="start-xs col-xs end-md col-md-5 col-lg-4 col-lg-offset-6">
+        <Row className="start-xs col-xs-12 end-md col-md-6 col-md-offset-3">
           <Link href="#" title="Terms">
             Terms
           </Link>

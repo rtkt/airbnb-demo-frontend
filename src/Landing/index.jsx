@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../UI/globals';
 import Experiences from './Experiences/';
 import Explore from './Explore/';
 import Featured from './Featured/';
@@ -10,7 +11,7 @@ import Popular from './Popular';
 const Main = styled.main`
   margin-top: 120px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     margin-top: 128px;
   }
 `;

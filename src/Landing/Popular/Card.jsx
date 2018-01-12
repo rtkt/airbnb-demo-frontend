@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../../UI/globals';
 import { Img, VerticalContainer as Container } from '../../UI/Card';
 
 const Place = styled.span`
@@ -8,7 +9,7 @@ const Place = styled.span`
   margin-top: 6px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     font-size: 10px;
     margin-top: 11px;
   }
@@ -20,7 +21,7 @@ const Title = styled.span`
   margin-bottom: 4px;
   margin-top: 1px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     font-size: 18px;
   }
 `;
@@ -30,7 +31,7 @@ const Price = styled.span`
   font-weight: 200;
   opacity: 0.9;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     font-size: 18px;
   }
 `;

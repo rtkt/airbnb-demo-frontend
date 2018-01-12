@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { H1, Section, Slider, SliderButton } from '../../UI/Section';
 import { VerticalContainer as Container, Img } from '../../UI/Card';
+import breakpoints from '../../UI/globals';
 import photo1 from './featured-1.png';
 import photo2 from './featured-2.png';
 import photo3 from './featured-3.png';
@@ -14,7 +15,7 @@ const Title = styled.span`
   font-weight: bold;
   margin-top: 3px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     font-size: 15px;
     margin-top: 7px;
   }

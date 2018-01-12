@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } from '../UI/Card';
+import breakpoints from '../UI/globals';
 import star from '../UI/star.svg';
 
 const Area = styled.span`
   font-size: 12px;
   font-weight: light;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     font-size: 15px;
   }
 `;
@@ -18,7 +19,7 @@ const Title = styled.span`
   margin-bottom: 2px;
   margin-top: 7px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}px) {
     font-size: 15px;
   }
 `;
