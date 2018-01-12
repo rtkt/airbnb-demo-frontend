@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HeaderLink = styled.a`
+const HeaderLink = styled.h3`
+  font-size: 15px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin: 0;
+  margin-bottom: 8px;
 `;
 
 const Link = styled.a`
@@ -20,9 +22,7 @@ const VerticalContainer = styled.div`
 export function Airbnb() {
   return (
     <VerticalContainer>
-      <HeaderLink href="#" title="Airbnb">
-        Airbnb
-      </HeaderLink>
+      <HeaderLink>Airbnb</HeaderLink>
       <Link href="#" title="About us">
         About us
       </Link>
@@ -48,9 +48,7 @@ export function Airbnb() {
 export function Discover() {
   return (
     <VerticalContainer>
-      <HeaderLink href="#" title="Discover">
-        Discover
-      </HeaderLink>
+      <HeaderLink>Discover</HeaderLink>
       <Link href="#" title="Trust & Safety">
         Trust & Safety
       </Link>
@@ -79,9 +77,7 @@ export function Discover() {
 export function Hosting() {
   return (
     <VerticalContainer>
-      <HeaderLink href="#" title="Hosting">
-        Hosting
-      </HeaderLink>
+      <HeaderLink>Hosting</HeaderLink>
       <Link href="#" title="Why Host">
         Why Host
       </Link>
