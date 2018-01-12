@@ -9,7 +9,6 @@ const MoreButton = styled.img`
 
 export const SeeAllContainer = styled(Link)`
   font-size: 12px;
-  text-decoration: none;
 
   @media (min-width: 768px) {
     font-size: 14px;
@@ -63,6 +62,7 @@ export const SliderButton = styled.button`
 `;
 
 export const H1Wrapper = H1.extend`
+  align-items: baseline;
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;

@@ -14,7 +14,6 @@ const Link = styled.a`
   line-height: 24px;
   padding-left: 8px;
   padding-right: 8px;
-  text-decoration: none;
 `;
 
 function Nav() {

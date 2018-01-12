@@ -6,7 +6,6 @@ const Link = styled.a`
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  text-decoration: none;
 
   @media (min-width: 768px) {
     flex-direction: row;

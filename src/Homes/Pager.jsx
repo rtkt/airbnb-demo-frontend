@@ -31,7 +31,6 @@ const Page = styled(Link)`
   line-height: 32px;
   margin-left: 8px;
   margin-right: 8px;
-  text-decoration: none;
   vertical-align: middle;
   width: 32px;
 
