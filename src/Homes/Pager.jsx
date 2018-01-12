@@ -19,7 +19,9 @@ const Dots = styled.span`
 const Note = styled.div`
   color: #636363;
   font-size: 16px;
+  line-height: 19px;
   margin-top: 40px;
+  margin-bottom: 25px;
 `;
 
 const Page = styled(Link)`
@@ -35,7 +37,8 @@ const Page = styled(Link)`
   width: 32px;
 
   ${props =>
-    props.current && `
+    props.current &&
+    `
     background-color: ${green};
     color: white;
     `};
@@ -54,12 +57,10 @@ const Next = Page.extend`
   fill: currentColor;
 `;
 
-const Pages = styled.div``;
-
 function Pager() {
   return (
     <Container>
-      <Pages>
+      <div>
         <Page to="/homes" current>
           1
         </Page>
@@ -68,7 +69,7 @@ function Pager() {
         <Dots>...</Dots>
         <Page to="#">17</Page>
         <Next to="#" />
-      </Pages>
+      </div>
       <Total>1 - 18 out of 300+ Rentals</Total>
       <Note>Enter dates to see full pricing. Additional fees apply. Taxes may be added</Note>
     </Container>
