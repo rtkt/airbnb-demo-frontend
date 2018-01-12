@@ -11,6 +11,7 @@ const Combobox = styled.select`
   border: 1px solid rgba(72, 72, 72, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
   margin-bottom: 16px;
   padding-bottom: 12px;
   padding-left: 16px;
@@ -22,10 +23,12 @@ export default function LocationOpts() {
   return (
     <form>
       <Combobox name="language">
-        <option value="English">English</option>
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
       </Combobox>
       <Combobox name="currency">
-        <option value="United States dollar">United States dollar</option>
+        <option value="usd">United States dollar</option>
+        <option value="rur">Российский рубль</option>
       </Combobox>
     </form>
   );
