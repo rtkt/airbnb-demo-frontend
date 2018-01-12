@@ -34,6 +34,12 @@ const Page = styled(Link)`
   text-decoration: none;
   vertical-align: middle;
   width: 32px;
+
+  ${props =>
+    props.current && `
+    background-color: ${green};
+    color: white;
+    `};
 `;
 
 const Total = styled.div`
@@ -55,7 +61,9 @@ function Pager() {
   return (
     <Container>
       <Pages>
-        <Page to="/homes">1</Page>
+        <Page to="/homes" current>
+          1
+        </Page>
         <Page to="#">2</Page>
         <Page to="#">3</Page>
         <Dots>...</Dots>
