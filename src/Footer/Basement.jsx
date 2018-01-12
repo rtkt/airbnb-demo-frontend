@@ -30,6 +30,11 @@ const Icon = styled.img`
 const Link = styled.a`
   margin-right: 12px;
 
+  &:link,
+  &:visited {
+    color: #636363;
+  }
+
   @media (min-width: 768px) {
     margin-left: 16px;
   }

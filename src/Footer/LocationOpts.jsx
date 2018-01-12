@@ -11,7 +11,11 @@ const Combobox = styled.select`
   border: 1px solid rgba(72, 72, 72, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  color: #383838;
   cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 200;
   margin-bottom: 16px;
   padding-bottom: 12px;
   padding-left: 16px;
