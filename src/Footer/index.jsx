@@ -10,10 +10,14 @@ const Container = styled.footer`
   padding-top: 48px;
 `;
 
+const Row = styled.div`
+  margin-bottom: 67px;
+`;
+
 export default function Footer() {
   return (
     <Container className="container">
-      <div className="row">
+      <Row className="row">
         <div className="col-xs col-md-3">
           <LocationOpts />
         </div>
@@ -26,7 +30,7 @@ export default function Footer() {
         <div className="hidden-xs col-md-2 col-md-offset-1">
           <Hosting />
         </div>
-      </div>
+      </Row>
       <Basement />
     </Container>
   );

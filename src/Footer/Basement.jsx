@@ -49,7 +49,7 @@ const Social = styled.div`
 
 const Wrapper = styled.div`
   margin-bottom: 34px;
-  margin-top: 82px;
+  margin-top: 32px;
 `;
 
 export default function Basement() {
