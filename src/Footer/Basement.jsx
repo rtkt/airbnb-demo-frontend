@@ -10,7 +10,11 @@ const Row = styled.div`
   align-items: center;
   color: #636363;
   display: flex;
-  font-size: 15px;
+  font-size: 12px;
+
+  @media (min-width: ${breakpoints.lg}px) {
+    font-size: 15px;
+  }
 `;
 
 const Hr = styled.hr`
