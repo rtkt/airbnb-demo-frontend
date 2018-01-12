@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from './Card';
 import Filters from './Filters';
+import Pager from './Pager';
 import photo1 from './home-1.png';
 import photo2 from './home-2.png';
 import photo3 from './home-3.png';
@@ -94,6 +95,7 @@ function HomesPage() {
             />
           </div>
         </Row>
+        <Pager />
       </div>
     </Main>
   );
