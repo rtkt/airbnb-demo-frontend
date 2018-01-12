@@ -27,13 +27,13 @@ export default function Footer() {
         <div className="col-xs-12 col-md-3">
           <LocationOpts />
         </div>
-        <div className="hidden-xs col-md-2 col-md-offset-1">
+        <div className="hidden-xs hidden-sm col-md-2 col-md-offset-1">
           <Airbnb />
         </div>
-        <div className="hidden-xs col-md-2 col-md-offset-1">
+        <div className="hidden-xs hidden-sm col-md-2 col-md-offset-1">
           <Discover />
         </div>
-        <div className="hidden-xs col-md-2 col-md-offset-1">
+        <div className="hidden-xs hidden-sm col-md-2 col-md-offset-1">
           <Hosting />
         </div>
       </Row>
