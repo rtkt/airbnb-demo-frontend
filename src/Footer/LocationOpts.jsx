@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../UI/globals';
 import arrow from '../UI/comboboxButton.svg';
 
 const Combobox = styled.select`
@@ -7,20 +8,29 @@ const Combobox = styled.select`
   background: white;
   background-image: url(${arrow});
   background-repeat: no-repeat;
-  background-position: calc(100% - 16px) center;
+  background-position: calc(100% - 8px) center;
   border: 1px solid rgba(72, 72, 72, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  color: #383838;
   cursor: pointer;
   font-family: inherit;
-  font-size: 18px;
-  font-weight: 200;
-  margin-bottom: 16px;
+  font-size: 12px;
   padding-bottom: 12px;
-  padding-left: 16px;
+  padding-left: 8px;
   padding-top: 12px;
   width: 100%;
+
+  @media (min-width: ${breakpoints.md}px) {
+    background-position: calc(100% - 12px) center;
+    font-size: 15px;
+  }
+
+  @media (min-width: ${breakpoints.lg}px) {
+    background-position: calc(100% - 16px) center;
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 16px;
+  }
 `;
 
 export default function LocationOpts() {
