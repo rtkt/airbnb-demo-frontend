@@ -26,14 +26,16 @@ const Combobox = styled.select`
 export default function LocationOpts() {
   return (
     <form>
-      <Combobox name="language">
-        <option value="en">English</option>
-        <option value="ru">Русский</option>
-      </Combobox>
-      <Combobox name="currency">
-        <option value="usd">United States dollar</option>
-        <option value="rur">Российский рубль</option>
-      </Combobox>
+      <div className="row">
+        <Combobox className="col-xs-6 col-md-12" name="language">
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+        </Combobox>
+        <Combobox className="col-xs-6 col-md-12" name="currency">
+          <option value="usd">United States dollar</option>
+          <option value="rur">Российский рубль</option>
+        </Combobox>
+      </div>
     </form>
   );
 }
