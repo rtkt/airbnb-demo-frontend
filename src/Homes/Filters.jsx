@@ -11,7 +11,7 @@ const Button = styled.button`
   padding: 7px 16px;
 `;
 
-const Container = styled.nav`
+const Container = styled.div`
   background: white;
   box-shadow: 0px 0.5px 0px rgba(72, 72, 72, 0.3);
   left: 0;
