@@ -15,7 +15,7 @@ const Main = styled.main`
   }
 `;
 
-function Landing() {
+export default function Landing() {
   return (
     <React.Fragment>
       <Main>
@@ -31,5 +31,3 @@ function Landing() {
     </React.Fragment>
   );
 }
-
-export default Landing;

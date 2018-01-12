@@ -57,7 +57,7 @@ const Next = Page.extend`
   fill: currentColor;
 `;
 
-function Pager() {
+export default function Pager() {
   return (
     <Container>
       <div>
@@ -75,5 +75,3 @@ function Pager() {
     </Container>
   );
 }
-
-export default Pager;

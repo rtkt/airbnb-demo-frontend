@@ -18,7 +18,7 @@ const Combobox = styled.select`
   width: 100%;
 `;
 
-function LocationOpts() {
+export default function LocationOpts() {
   return (
     <form>
       <Combobox name="language">
@@ -30,5 +30,3 @@ function LocationOpts() {
     </form>
   );
 }
-
-export default LocationOpts;

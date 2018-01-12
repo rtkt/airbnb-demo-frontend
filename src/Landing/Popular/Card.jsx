@@ -35,7 +35,7 @@ const Price = styled.span`
   }
 `;
 
-function Card(props) {
+export default function Card(props) {
   return (
     <Container href={props.href} title={props.title}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -45,5 +45,3 @@ function Card(props) {
     </Container>
   );
 }
-
-export default Card;

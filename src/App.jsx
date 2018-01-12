@@ -4,7 +4,7 @@ import Homes from './Homes/';
 import Landing from './Landing/';
 import Header from './Header/';
 
-function App() {
+export default function App() {
   return (
     <React.Fragment>
       <Header />
@@ -15,5 +15,3 @@ function App() {
     </React.Fragment>
   );
 }
-
-export default App;

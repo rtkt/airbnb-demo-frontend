@@ -10,7 +10,7 @@ const Container = styled.footer`
   padding-top: 48px;
 `;
 
-function Footer() {
+export default function Footer() {
   return (
     <Container className="container">
       <div className="row">
@@ -31,5 +31,3 @@ function Footer() {
     </Container>
   );
 }
-
-export default Footer;

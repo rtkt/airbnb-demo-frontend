@@ -27,7 +27,7 @@ const PushedReviews = Reviews.extend`
   margin-top: 6px;
 `;
 
-function Card(props) {
+export default function Card(props) {
   return (
     <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -47,5 +47,3 @@ function Card(props) {
     </Container>
   );
 }
-
-export default Card;

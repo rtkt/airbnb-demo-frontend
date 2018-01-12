@@ -13,7 +13,7 @@ import photo2 from './experience-2.png';
 import photo3 from './experience-3.png';
 import photo4 from './experience-4.png';
 
-function Experiences() {
+export default function Experiences() {
   return (
     <Section>
       <H1Wrapper>
@@ -68,5 +68,3 @@ function Experiences() {
     </Section>
   );
 }
-
-export default Experiences;

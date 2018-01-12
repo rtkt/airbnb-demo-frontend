@@ -12,7 +12,7 @@ import photo1 from '../../Homes/home-1.png';
 import photo2 from '../../Homes/home-2.png';
 import photo3 from '../../Homes/home-3.png';
 
-function Homes() {
+export default function Homes() {
   return (
     <Section>
       <H1Wrapper>
@@ -60,5 +60,3 @@ function Homes() {
     </Section>
   );
 }
-
-export default Homes;

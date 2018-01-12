@@ -19,7 +19,7 @@ const Row = styled.div`
   margin-top: 40px;
 `;
 
-function HomesPage() {
+export default function HomesPage() {
   return (
     <Main>
       <Filters />
@@ -102,5 +102,3 @@ function HomesPage() {
     </Main>
   );
 }
-
-export default HomesPage;

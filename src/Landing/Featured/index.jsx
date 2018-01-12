@@ -29,7 +29,7 @@ function Card(props) {
   );
 }
 
-function Featured() {
+export default function Featured() {
   return (
     <Section>
       <H1>Featured destinations</H1>
@@ -57,5 +57,3 @@ function Featured() {
     </Section>
   );
 }
-
-export default Featured;

@@ -11,7 +11,7 @@ const Row = styled.div`
   overflow: auto;
 `;
 
-function Explore() {
+export default function Explore() {
   return (
     <Section>
       <H1>Explore</H1>
@@ -29,5 +29,3 @@ function Explore() {
     </Section>
   );
 }
-
-export default Explore;

@@ -21,7 +21,7 @@ const Logo = styled.img`
   vertical-align: middle;
 `;
 
-function Header() {
+export default function Header() {
   return (
     <Container>
       <div className="container">
@@ -43,5 +43,3 @@ function Header() {
     </Container>
   );
 }
-
-export default Header;

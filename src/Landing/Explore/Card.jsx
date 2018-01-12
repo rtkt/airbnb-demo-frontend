@@ -40,7 +40,7 @@ const Text = styled.span`
   }
 `;
 
-function Card(props) {
+export default function Card(props) {
   return (
     <Container>
       <Link className="middle-md" href={props.href} title={props.alt}>
@@ -50,5 +50,3 @@ function Card(props) {
     </Container>
   );
 }
-
-export default Card;

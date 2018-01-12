@@ -16,7 +16,7 @@ const Link = styled.a`
   padding-right: 8px;
 `;
 
-function Nav() {
+export default function Nav() {
   return (
     <Container className="middle-xs">
       <Link href="#" title="Become a host">
@@ -34,5 +34,3 @@ function Nav() {
     </Container>
   );
 }
-
-export default Nav;

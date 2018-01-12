@@ -31,12 +31,10 @@ const Input = styled.input`
   }
 `;
 
-function Search() {
+export default function Search() {
   return (
     <Container className="middle-xs">
       <Input type="text" name="location" placeholder="Try &quot;Miami&quot;" />
     </Container>
   );
 }
-
-export default Search;

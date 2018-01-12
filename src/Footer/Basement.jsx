@@ -52,7 +52,7 @@ const Wrapper = styled.div`
   margin-top: 82px;
 `;
 
-function Basement() {
+export default function Basement() {
   return (
     <React.Fragment>
       <Hr />
@@ -87,5 +87,3 @@ function Basement() {
     </React.Fragment>
   );
 }
-
-export default Basement;

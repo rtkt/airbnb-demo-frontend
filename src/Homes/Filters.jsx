@@ -21,7 +21,7 @@ const Container = styled.nav`
   z-index: 10;
 `;
 
-function Filters() {
+export default function Filters() {
   return (
     <Container>
       <div className="container">
@@ -35,5 +35,3 @@ function Filters() {
     </Container>
   );
 }
-
-export default Filters;

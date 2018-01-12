@@ -13,7 +13,7 @@ import popularPhoto2 from './popular-2.png';
 import popularPhoto3 from './popular-3.png';
 import popularPhoto4 from './popular-4.png';
 
-function Popular() {
+export default function Popular() {
   return (
     <Section>
       <H1Wrapper>
@@ -68,5 +68,3 @@ function Popular() {
     </Section>
   );
 }
-
-export default Popular;
