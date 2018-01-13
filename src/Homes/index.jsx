@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { DatePickerRangeController } from 'react-dates';
 import { Helmet } from 'react-helmet';
 import breakpoints from '../UI/globals';
 import { Overlay } from '../UI/Section';
 import { Button, HideableButton } from './Buttons';
 import Content from './Content';
-import Date from './Date/';
+// import Dates from './Dates/';
 
 const Filters = styled.div`
   background: white;
@@ -39,10 +40,39 @@ export default class HomesPage extends React.Component {
     super(props);
     this.state = {
       isOpen: false,
-      startDate: undefined,
-      endDate: undefined,
+      startDate: null,
+      endDate: null,
     };
     this.toggleCalendar = this.toggleCalendar.bind(this);
+  }
+
+  onCancel(e) {
+    this.setState({ activeFilter: false, startDate: null, endDate: null });
+  }
+
+  onApply(e) {
+    this.setState({ activeFilter: false });
+  }
+
+  onReset(e) {
+    this.setState({
+      focusedInput: 'startDate',
+      startDate: null,
+      endDate: null,
+    });
+  }
+
+  onFocusChang(focusedInput) {
+    this.setState({
+      focusedInput: !focusedInput ? 'startDate' : focusedInput,
+    });
+  }
+
+  onDatesChange(startDate, endDate) {
+    this.setState({
+      startDate,
+      endDate,
+    });
   }
 
   toggleCalendar(prevState) {
@@ -63,20 +93,6 @@ export default class HomesPage extends React.Component {
   }
   /* eslint-enable class-methods-use-this */
 
-  saveDates(start, end) {
-    this.setState({
-      startDate: start,
-      endDate: end,
-    });
-  }
-
-  resetDates() {
-    this.setState({
-      startDate: undefined,
-      endDate: undefined,
-    });
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -85,6 +101,18 @@ export default class HomesPage extends React.Component {
         </Helmet>
         <Main>
           {this.state.isOpen && <Overlay />}
+          {this.state.isOpen && (
+            <DatePickerRangeController
+              activeFilter={this.state.activeFilter}
+              startDate={this.state.startDate}
+              endDate={this.state.endDate}
+              onDatesChange={this.onDatesChange}
+              focusedInput={this.onFocusChange}
+              onApply={this.onApply}
+              onClose={this.onClose}
+              onReset={this.onReset}
+            />
+          )}
           <Filters>
             <div className="container">
               <Button onClick={this.toggleCalendar}>Dates</Button>

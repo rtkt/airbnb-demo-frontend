@@ -1,3 +1,4 @@
+import 'react-dates/initialize';
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Homes from './Homes/';
