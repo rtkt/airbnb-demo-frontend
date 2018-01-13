@@ -45,12 +45,15 @@ export default function Header() {
     <Container>
       <div className="container">
         <LogoWrapper>
-          <Logo src={logo} alt="Logo" title="Logo" />
-          <Link className="hidden-lg hidden-xl" to="/" title="Menu">
-            <img src={menuButton} alt="Menu" title="Menu" />
+          <Link to="/">
+            <Logo src={logo} alt="Logo" title="Logo" />
           </Link>
+          <a className="hidden-lg hidden-xl" title="Menu">
+            <img src={menuButton} alt="Menu" title="Menu" />
+          </a>
         </LogoWrapper>
         <Search />
+        <Nav />
       </div>
     </Container>
   );

@@ -1,15 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../UI/globals';
 
 const Container = styled.nav`
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
   margin-bottom: 27px;
   margin-top: 27px;
+  text-align: right;
+  width: calc(58.3333% - 73px);
+
+  @media (min-width: ${breakpoints.lg}) {
+    display: inline-block;
+  }
 `;
 
 const Link = styled.a`
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 24px;
   padding-left: 8px;
@@ -18,7 +23,7 @@ const Link = styled.a`
 
 export default function Nav() {
   return (
-    <Container className="middle-xs">
+    <Container className="hidden-xs hidden-sm hidden-md">
       <Link href="#" title="Become a host">
         Become a host
       </Link>

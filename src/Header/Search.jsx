@@ -12,10 +12,10 @@ const Container = styled.form`
   width: calc(100% - 60px);
 
   @media (min-width: ${breakpoints.md}) {
-    width: calc(58.3333% - 72px);
+    width: calc(58.3333% - 60px);
   }
   @media (min-width: ${breakpoints.lg}) {
-    width: calc(41.6667% - 72px);
+    width: calc(41.6667% - 8px);
   }
 `;
 
