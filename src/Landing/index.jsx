@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 import breakpoints from '../UI/globals';
 import Experiences from './Experiences/';
 import Explore from './Explore/';
@@ -19,6 +20,9 @@ const Main = styled.main`
 export default function Landing() {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Airbnb</title>
+      </Helmet>
       <Main>
         <div className="container">
           <Explore />

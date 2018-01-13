@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 import breakpoints from '../UI/globals';
 import Card from './Card';
 import Filters from './Filters';
@@ -36,6 +37,9 @@ const Row = styled.div`
 export default function HomesPage() {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Homes</title>
+      </Helmet>
       <Main>
         <Filters />
         <div className="container">
