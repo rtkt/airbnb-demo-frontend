@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import breakpoints from '../UI/globals';
 import Search from './Search';
 import Nav from './Nav';
 import logo from './logo.svg';
@@ -16,29 +18,39 @@ const Container = styled.header`
 `;
 
 const Logo = styled.img`
+  margin-right: 5px;
   padding-top: 24px;
   padding-bottom: 24px;
   vertical-align: middle;
+
+  @media (min-width: ${breakpoints.md}) {
+    margin-right: 0;
+  }
+`;
+
+const LogoWrapper = styled.div`
+  display: inline-block;
+  margin-right: 8px;
+
+  @media (min-width: ${breakpoints.md}) {
+    margin-right: 16px;
+  }
+  @media (min-width: ${breakpoints.lg}) {
+    margin-right: 51px;
+  }
 `;
 
 export default function Header() {
   return (
     <Container>
       <div className="container">
-        <div className="row">
-          <div className="col-xs-2 col-md-1">
-            <Logo src={logo} alt="Logo" title="Logo" />
-            <a className="hidden-lg hidden-xl" href="#" title="Menu">
-              <img src={menuButton} alt="Menu" title="Menu" />
-            </a>
-          </div>
-          <div className="col-xs-10 col-md-7 col-lg-5">
-            <Search />
-          </div>
-          <div className="hidden-xs hidden-sm hidden-md col-lg-4 col-lg-offset-2">
-            <Nav />
-          </div>
-        </div>
+        <LogoWrapper>
+          <Logo src={logo} alt="Logo" title="Logo" />
+          <Link className="hidden-lg hidden-xl" to="/" title="Menu">
+            <img src={menuButton} alt="Menu" title="Menu" />
+          </Link>
+        </LogoWrapper>
+        <Search />
       </div>
     </Container>
   );
