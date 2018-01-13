@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../UI/globals';
 
 const Button = styled.button`
+  background-color: white;
   border: 1px solid rgba(72, 72, 72, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -21,15 +23,23 @@ const Container = styled.div`
   z-index: 10;
 `;
 
+const HideableBtn = Button.extend`
+  display: none;
+
+  @media (min-width: ${breakpoints.lg}px) {
+    display: inline-block;
+  }
+`;
+
 export default function Filters() {
   return (
     <Container>
       <div className="container">
         <Button type="button">Dates</Button>
         <Button type="button">Guests</Button>
-        <Button type="button">Room type</Button>
-        <Button type="button">Price</Button>
-        <Button type="button">Instant book</Button>
+        <HideableBtn type="button">Room type</HideableBtn>
+        <HideableBtn type="button">Price</HideableBtn>
+        <HideableBtn type="button">Instant book</HideableBtn>
         <Button type="button">More filters</Button>
       </div>
     </Container>
