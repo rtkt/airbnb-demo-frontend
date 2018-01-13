@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import breakpoints from '../UI/globals';
 import next from './next.svg';
 
 const green = '#008489';
 
 const Container = styled.div`
   font-size: 16px;
-  margin-right: 33.3333%;
-  margin-top: 48px;
+  margin-top: 40px;
   text-align: center;
+
+  @media (min-width: ${breakpoints.md}px) {
+    margin-top: 48px;
+  }
+  @media (min-width: ${breakpoints.lg}px) {
+    margin-right: 33.3333%;
+  }
 `;
 
 const Dots = styled.span`
@@ -46,7 +53,7 @@ const Next = Page.extend`
   background-repeat: no-repeat;
   border: 1px solid #008489;
   box-sizing: border-box;
-  fill: currentColor;
+  margin-left: 12px;
 `;
 
 export default function Pages() {

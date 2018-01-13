@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../UI/globals';
 import Card from './Card';
 import Filters from './Filters';
 import GMap from './Map';
@@ -16,8 +17,12 @@ const Footer = styled.footer`
   font-size: 16px;
   line-height: 19px;
   margin-top: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 88px;
   text-align: center;
+
+  @media (min-width: ${breakpoints.md}px) {
+    margin-bottom: 24px;
+  }
 `;
 
 const Main = styled.main`
