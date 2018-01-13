@@ -47,7 +47,9 @@ export default class HomesPage extends React.Component {
 
   toggleCalendar(prevState) {
     /* eslint-disable */
-    this.setState(prevstate => ({ isOpen: prevState.isOpen }));
+    this.setState(prevState => {
+      return { isOpen: !prevState.isOpen };
+    });
     /* eslint-enable */
   }
 

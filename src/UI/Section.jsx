@@ -10,6 +10,7 @@ const MoreButton = styled.img`
 
 export const Overlay = styled.div`
   background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
