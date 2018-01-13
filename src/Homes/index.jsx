@@ -11,6 +11,15 @@ import photo4 from './home-4.png';
 import photo5 from './home-5.png';
 import photo6 from './home-6.png';
 
+const Footer = styled.footer`
+  color: #636363;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+`;
+
 const Main = styled.main`
   margin-top: 160px;
 `;
@@ -21,84 +30,87 @@ const Row = styled.div`
 
 export default function HomesPage() {
   return (
-    <Main>
-      <Filters />
-      <div className="container">
-        <Row className="row">
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <Card
-              href="#"
-              img={photo1}
-              alt="La Salentina"
-              title="La Salentina, see, nature & relax"
-              area="Entire house · 9 beds"
-              rating="97 · Superhost"
-              price="82"
-            />
-          </div>
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <Card
-              href="#"
-              img={photo2}
-              alt="Your private 3 bedroom"
-              title="Your private 3 bedr. riad and exclusi..."
-              area="Entire house · 5 beds"
-              rating="161 · Superhost"
-              price="82"
-            />
-          </div>
-        </Row>
-        <Row className="row">
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <Card
-              href="#"
-              img={photo3}
-              alt="Dreamy Tropical Tree House"
-              title="Dreamy Tropical Tree House"
-              area="Entire treehouse · 1 bed"
-              rating="364 · Superhost"
-              price="200"
-            />
-          </div>
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <Card
-              href="#"
-              img={photo4}
-              alt="Best location old town luxury loft"
-              title="Best location old town luxury loft"
-              area="Entire apartment · 1 bed"
-              rating="369 · Superhost"
-              price="110"
-            />
-          </div>
-        </Row>
-        <Row className="row">
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <Card
-              href="#"
-              img={photo5}
-              alt="Lussuoso. Vista incantevole."
-              title="Lussuoso. Vista incantevole."
-              area="Entire apartment · 6 bed"
-              rating="105 · Superhost"
-              price="83"
-            />
-          </div>
-          <div className="col-xs-12 col-md-6 col-lg-4">
-            <Card
-              href="#"
-              img={photo6}
-              alt="In the historical center of Lecce"
-              title="In the historical center of Lecce"
-              area="Entire apartment · 3 bed"
-              rating="221 · Superhost"
-              price="72"
-            />
-          </div>
-        </Row>
-        <Pages />
-        <GMap />
-      </div>
-    </Main>
+    <React.Fragment>
+      <Main>
+        <Filters />
+        <div className="container">
+          <Row className="row">
+            <div className="col-xs-12 col-md-6 col-lg-4">
+              <Card
+                href="#"
+                img={photo1}
+                alt="La Salentina"
+                title="La Salentina, see, nature & relax"
+                area="Entire house · 9 beds"
+                rating="97 · Superhost"
+                price="82"
+              />
+            </div>
+            <div className="col-xs-12 col-md-6 col-lg-4">
+              <Card
+                href="#"
+                img={photo2}
+                alt="Your private 3 bedroom"
+                title="Your private 3 bedr. riad and exclusi..."
+                area="Entire house · 5 beds"
+                rating="161 · Superhost"
+                price="82"
+              />
+            </div>
+          </Row>
+          <Row className="row">
+            <div className="col-xs-12 col-md-6 col-lg-4">
+              <Card
+                href="#"
+                img={photo3}
+                alt="Dreamy Tropical Tree House"
+                title="Dreamy Tropical Tree House"
+                area="Entire treehouse · 1 bed"
+                rating="364 · Superhost"
+                price="200"
+              />
+            </div>
+            <div className="col-xs-12 col-md-6 col-lg-4">
+              <Card
+                href="#"
+                img={photo4}
+                alt="Best location old town luxury loft"
+                title="Best location old town luxury loft"
+                area="Entire apartment · 1 bed"
+                rating="369 · Superhost"
+                price="110"
+              />
+            </div>
+          </Row>
+          <Row className="row">
+            <div className="col-xs-12 col-md-6 col-lg-4">
+              <Card
+                href="#"
+                img={photo5}
+                alt="Lussuoso. Vista incantevole."
+                title="Lussuoso. Vista incantevole."
+                area="Entire apartment · 6 bed"
+                rating="105 · Superhost"
+                price="83"
+              />
+            </div>
+            <div className="col-xs-12 col-md-6 col-lg-4">
+              <Card
+                href="#"
+                img={photo6}
+                alt="In the historical center of Lecce"
+                title="In the historical center of Lecce"
+                area="Entire apartment · 3 bed"
+                rating="221 · Superhost"
+                price="72"
+              />
+            </div>
+          </Row>
+          <Pages />
+          <GMap />
+        </div>
+      </Main>
+      <Footer>Enter dates to see full pricing. Additional fees apply. Taxes may be added</Footer>
+    </React.Fragment>
   );
 }

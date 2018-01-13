@@ -16,14 +16,6 @@ const Dots = styled.span`
   margin-right: 14px;
 `;
 
-const Note = styled.div`
-  color: #636363;
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: 40px;
-  margin-bottom: 25px;
-`;
-
 const Page = styled(Link)`
   border: none;
   border-radius: 16px;
@@ -57,7 +49,7 @@ const Next = Page.extend`
   fill: currentColor;
 `;
 
-export default function Pager() {
+export default function Pages() {
   return (
     <Container>
       <div>
@@ -71,7 +63,6 @@ export default function Pager() {
         <Next to="#" />
       </div>
       <Total>1 - 18 out of 300+ Rentals</Total>
-      <Note>Enter dates to see full pricing. Additional fees apply. Taxes may be added</Note>
     </Container>
   );
 }
