@@ -8,6 +8,15 @@ const MoreButton = styled.img`
   margin-left: 8px;
 `;
 
+export const Overlay = styled.div`
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+`;
+
 export const SeeAllContainer = styled(Link)`
   font-size: 12px;
 
