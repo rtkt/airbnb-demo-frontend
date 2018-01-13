@@ -1,10 +1,8 @@
 import React from 'react';
 import Card from '../../Homes/Card';
 import {
-  H1Wrapper,
-  SeeAll,
-  SeeAllContainer,
   Section,
+  SectionHead,
   Slider,
   SliderButton,
 } from '../../UI/Section';
@@ -15,12 +13,7 @@ import photo3 from '../../Homes/home-3.png';
 export default function Homes() {
   return (
     <Section>
-      <H1Wrapper>
-        Homes
-        <SeeAllContainer to="/homes">
-          <SeeAll />
-        </SeeAllContainer>
-      </H1Wrapper>
+      <SectionHead to="/homes" title="Homes" />
       <Slider className="row">
         <div className="col-xs-7 col-md-5 col-lg-4">
           <Card

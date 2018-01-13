@@ -1,13 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import {
-  H1Wrapper,
-  SeeAll,
-  SeeAllContainer,
-  Section,
-  Slider,
-  SliderButton,
-} from '../../UI/Section';
+import { Section, SectionHead, Slider, SliderButton } from '../../UI/Section';
 import popularPhoto1 from './popular-1.png';
 import popularPhoto2 from './popular-2.png';
 import popularPhoto3 from './popular-3.png';
@@ -16,12 +9,7 @@ import popularPhoto4 from './popular-4.png';
 export default function Popular() {
   return (
     <Section>
-      <H1Wrapper>
-        Popular reservations around the world
-        <SeeAllContainer to="/popular">
-          <SeeAll />
-        </SeeAllContainer>
-      </H1Wrapper>
+      <SectionHead to="#" title="Popular reservations around the world" />
       <Slider className="row">
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card

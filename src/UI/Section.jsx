@@ -62,7 +62,7 @@ export const SliderButton = styled.button`
   }
 `;
 
-export const H1Wrapper = H1.extend`
+const H1Wrapper = H1.extend`
   align-items: baseline;
   display: flex;
   justify-content: space-between;
@@ -70,11 +70,22 @@ export const H1Wrapper = H1.extend`
   margin-top: 0;
 `;
 
-export function SeeAll() {
+function SeeAll() {
   return (
     <React.Fragment>
       <span>See all</span>
       <MoreButton src={morePic} alt="See all" title="See all" />
     </React.Fragment>
+  );
+}
+
+export function SectionHead(props) {
+  return (
+    <H1Wrapper>
+      {props.title}
+      <SeeAllContainer to={props.to} title="See all">
+        <SeeAll />
+      </SeeAllContainer>
+    </H1Wrapper>
   );
 }
