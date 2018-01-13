@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Card from './Card';
 import Filters from './Filters';
 import GMap from './Map';
-import Pager from './Pager';
+import Pages from './Pages';
 import photo1 from './home-1.png';
 import photo2 from './home-2.png';
 import photo3 from './home-3.png';
@@ -96,7 +96,7 @@ export default function HomesPage() {
             />
           </div>
         </Row>
-        <Pager />
+        <Pages />
         <GMap />
       </div>
     </Main>
