@@ -10,7 +10,7 @@ const Container = styled.footer`
   margin-top: 40px;
   padding-top: 16px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     margin-top: 64px;
     padding-top: 40px;
   }

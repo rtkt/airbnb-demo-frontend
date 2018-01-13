@@ -11,7 +11,7 @@ import Popular from './Popular';
 const Main = styled.main`
   margin-top: 120px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     margin-top: 128px;
   }
 `;

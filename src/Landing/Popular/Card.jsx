@@ -9,7 +9,7 @@ const Place = styled.span`
   margin-top: 6px;
   text-transform: uppercase;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 10px;
     margin-top: 11px;
   }
@@ -21,7 +21,7 @@ const Title = styled.span`
   margin-bottom: 4px;
   margin-top: 1px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 18px;
   }
 `;
@@ -31,7 +31,7 @@ const Price = styled.span`
   font-weight: 200;
   opacity: 0.9;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 18px;
   }
 `;

@@ -11,7 +11,7 @@ const MoreButton = styled.img`
 export const SeeAllContainer = styled(Link)`
   font-size: 12px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 14px;
   }
 `;
@@ -20,7 +20,7 @@ export const H1 = styled.h1`
   font-size: 24px;
   font-weight: bold;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 32px;
   }
 `;
@@ -29,7 +29,7 @@ export const Section = styled.section`
   margin-top: 40px;
   position: relative;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     margin-top: 48px;
   }
 `;
@@ -43,7 +43,7 @@ export const Slider = styled.div`
 export const SliderButton = styled.button`
   display: none;
 
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg}) {
     box-sizing: border-box;
     background-color: white;
     background-image: url(${morePic});

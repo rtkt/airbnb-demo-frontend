@@ -11,10 +11,10 @@ const Container = styled.div`
   margin-top: 40px;
   text-align: center;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     margin-top: 48px;
   }
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg}) {
     margin-right: 33.3333%;
   }
 `;

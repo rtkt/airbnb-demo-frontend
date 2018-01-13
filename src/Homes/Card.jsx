@@ -8,7 +8,7 @@ const Area = styled.span`
   font-size: 12px;
   font-weight: light;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 15px;
   }
 `;
@@ -19,7 +19,7 @@ const Title = styled.span`
   margin-bottom: 2px;
   margin-top: 7px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 15px;
   }
 `;

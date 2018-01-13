@@ -15,7 +15,7 @@ const Title = styled.span`
   font-weight: bold;
   margin-top: 3px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 15px;
     margin-top: 7px;
   }

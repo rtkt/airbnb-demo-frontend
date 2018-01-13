@@ -10,7 +10,7 @@ const Name = styled.span`
   margin-bottom: 5px;
   margin-top: 7px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 15px;
   }
 `;

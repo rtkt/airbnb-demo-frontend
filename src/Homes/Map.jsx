@@ -6,7 +6,7 @@ import breakpoints from '../UI/globals';
 const Container = styled.div`
   display: none;
 
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg}) {
     display: block;
     height: 100vh;
     position: fixed;

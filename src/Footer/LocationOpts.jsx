@@ -22,7 +22,7 @@ const Combobox = styled.select`
   padding-top: 12px;
   width: 100%;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     background-position: calc(100% - 12px) center;
     background-size: 15px 8px;
     font-size: 15px;
@@ -31,7 +31,7 @@ const Combobox = styled.select`
     padding-top: 14px;
   }
 
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg}) {
     background-position: calc(100% - 16px) center;
     font-size: 18px;
     padding-left: 16px;

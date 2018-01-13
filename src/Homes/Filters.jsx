@@ -26,7 +26,7 @@ const Container = styled.div`
 const HideableBtn = Button.extend`
   display: none;
 
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg}) {
     display: inline-block;
   }
 `;

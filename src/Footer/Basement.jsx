@@ -12,7 +12,7 @@ const Row = styled.div`
   display: flex;
   font-size: 12px;
 
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg}) {
     font-size: 15px;
   }
 `;
@@ -27,7 +27,7 @@ const Hr = styled.hr`
 const Icon = styled.img`
   margin-left: 8px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     margin-left: 12px;
   }
 `;
@@ -40,7 +40,7 @@ const Link = styled.a`
     color: #636363;
   }
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     margin-left: 16px;
   }
 `;
@@ -52,7 +52,7 @@ const Logo = styled.img`
 const Social = styled.div`
   margin-left: 12px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     margin-left: 24px;
   }
 `;

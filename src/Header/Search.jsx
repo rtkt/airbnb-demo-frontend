@@ -21,13 +21,13 @@ const Input = styled.input`
   font-size: 16px;
   padding: 12px 0 12px 35px;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     background-size: 20px 21px;
     background-position: 16px center;
     padding-left: 49px;
   }
 
-  @media (min-width: ${breakpoints.lg}px) {
+  @media (min-width: ${breakpoints.lg}) {
     padding-left: 53px;
   }
 `;

@@ -20,7 +20,7 @@ const Footer = styled.footer`
   margin-bottom: 88px;
   text-align: center;
 
-  @media (min-width: ${breakpoints.md}px) {
+  @media (min-width: ${breakpoints.md}) {
     margin-bottom: 24px;
   }
 `;
