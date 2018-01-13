@@ -2,16 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import breakpoints from '../UI/globals';
-import Card from './Card';
-import Filters from './Filters';
-import GMap from './Map';
-import Pages from './Pages';
-import photo1 from './home-1.png';
-import photo2 from './home-2.png';
-import photo3 from './home-3.png';
-import photo4 from './home-4.png';
-import photo5 from './home-5.png';
-import photo6 from './home-6.png';
+import { Overlay } from '../UI/Section';
+import { Button, HideableButton } from './Buttons';
+import Content from './Content';
+import Date from './Date/';
+
+const Filters = styled.div`
+  background: white;
+  box-shadow: 0px 0.5px 0px rgba(72, 72, 72, 0.3);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  z-index: 10;
+`;
 
 const Footer = styled.footer`
   color: #636363;
@@ -30,96 +34,69 @@ const Main = styled.main`
   margin-top: 160px;
 `;
 
-const Row = styled.div`
-  margin-top: 40px;
-`;
+export default class HomesPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false,
+      startDate: undefined,
+      endDate: undefined,
+    };
+    this.toggleCalendar = this.toggleCalendar.bind(this);
+  }
 
-export default function HomesPage() {
-  return (
-    <React.Fragment>
-      <Helmet>
-        <title>Homes</title>
-      </Helmet>
-      <Main>
-        <Filters />
-        <div className="container">
-          <Row className="row">
-            <div className="col-xs-12 col-md-6 col-lg-4">
-              <Card
-                href="#"
-                img={photo1}
-                alt="La Salentina"
-                title="La Salentina, see, nature & relax"
-                area="Entire house · 9 beds"
-                rating="97 · Superhost"
-                price="82"
-              />
+  toggleCalendar(prevState) {
+    /* eslint-disable */
+    this.setState(prevstate => ({ isOpen: prevState.isOpen }));
+    /* eslint-enable */
+  }
+
+  /* eslint-disable class-methods-use-this */
+  initState() {
+    return {
+      isOpen: false,
+      startDate: undefined,
+      endDate: undefined,
+    };
+  }
+  /* eslint-enable class-methods-use-this */
+
+  saveDates(start, end) {
+    this.setState({
+      startDate: start,
+      endDate: end,
+    });
+  }
+
+  resetDates() {
+    this.setState({
+      startDate: undefined,
+      endDate: undefined,
+    });
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <Helmet>
+          <title>Homes</title>
+        </Helmet>
+        <Main>
+          {this.state.isOpen && <Overlay />}
+          <Filters>
+            <div className="container">
+              <Button onClick={this.toggleCalendar}>Dates</Button>
+              <Button>Guests</Button>
+              <HideableButton>Room type</HideableButton>
+              <HideableButton>Price</HideableButton>
+              <HideableButton>Instant book</HideableButton>
+              <Button>More filters</Button>
             </div>
-            <div className="col-xs-12 col-md-6 col-lg-4">
-              <Card
-                href="#"
-                img={photo2}
-                alt="Your private 3 bedroom"
-                title="Your private 3 bedr. riad and exclusi..."
-                area="Entire house · 5 beds"
-                rating="161 · Superhost"
-                price="82"
-              />
-            </div>
-          </Row>
-          <Row className="row">
-            <div className="col-xs-12 col-md-6 col-lg-4">
-              <Card
-                href="#"
-                img={photo3}
-                alt="Dreamy Tropical Tree House"
-                title="Dreamy Tropical Tree House"
-                area="Entire treehouse · 1 bed"
-                rating="364 · Superhost"
-                price="200"
-              />
-            </div>
-            <div className="col-xs-12 col-md-6 col-lg-4">
-              <Card
-                href="#"
-                img={photo4}
-                alt="Best location old town luxury loft"
-                title="Best location old town luxury loft"
-                area="Entire apartment · 1 bed"
-                rating="369 · Superhost"
-                price="110"
-              />
-            </div>
-          </Row>
-          <Row className="row">
-            <div className="col-xs-12 col-md-6 col-lg-4">
-              <Card
-                href="#"
-                img={photo5}
-                alt="Lussuoso. Vista incantevole."
-                title="Lussuoso. Vista incantevole."
-                area="Entire apartment · 6 bed"
-                rating="105 · Superhost"
-                price="83"
-              />
-            </div>
-            <div className="col-xs-12 col-md-6 col-lg-4">
-              <Card
-                href="#"
-                img={photo6}
-                alt="In the historical center of Lecce"
-                title="In the historical center of Lecce"
-                area="Entire apartment · 3 bed"
-                rating="221 · Superhost"
-                price="72"
-              />
-            </div>
-          </Row>
-          <Pages />
-          <GMap />
-        </div>
-      </Main>
-      <Footer>Enter dates to see full pricing. Additional fees apply. Taxes may be added</Footer>
-    </React.Fragment>
-  );
+          </Filters>
+          <Content />
+        </Main>
+        <Footer>Enter dates to see full pricing. Additional fees apply. Taxes may be added</Footer>
+      </React.Fragment>
+    );
+  }
 }
