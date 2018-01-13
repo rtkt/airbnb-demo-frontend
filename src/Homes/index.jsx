@@ -25,7 +25,7 @@ export default function HomesPage() {
       <Filters />
       <div className="container">
         <Row className="row">
-          <div className="col-lg-4">
+          <div className="col-xs-12 col-md-6 col-lg-4">
             <Card
               href="#"
               img={photo1}
@@ -36,7 +36,7 @@ export default function HomesPage() {
               price="82"
             />
           </div>
-          <div className="col-lg-4">
+          <div className="col-xs-12 col-md-6 col-lg-4">
             <Card
               href="#"
               img={photo2}
@@ -49,7 +49,7 @@ export default function HomesPage() {
           </div>
         </Row>
         <Row className="row">
-          <div className="col-lg-4">
+          <div className="col-xs-12 col-md-6 col-lg-4">
             <Card
               href="#"
               img={photo3}
@@ -60,7 +60,7 @@ export default function HomesPage() {
               price="200"
             />
           </div>
-          <div className="col-lg-4">
+          <div className="col-xs-12 col-md-6 col-lg-4">
             <Card
               href="#"
               img={photo4}
@@ -73,7 +73,7 @@ export default function HomesPage() {
           </div>
         </Row>
         <Row className="row">
-          <div className="col-lg-4">
+          <div className="col-xs-12 col-md-6 col-lg-4">
             <Card
               href="#"
               img={photo5}
@@ -84,7 +84,7 @@ export default function HomesPage() {
               price="83"
             />
           </div>
-          <div className="col-lg-4">
+          <div className="col-xs-12 col-md-6 col-lg-4">
             <Card
               href="#"
               img={photo6}

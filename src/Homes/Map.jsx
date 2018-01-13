@@ -1,13 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import GoogleMapReact from 'google-map-react';
+import breakpoints from '../UI/globals';
 
 const Container = styled.div`
-  height: 100vh;
-  position: fixed;
-  right: 0;
-  top: 137px;
-  width: 33.3333%;
+  display: none;
+
+  @media (min-width: ${breakpoints.lg}px) {
+    display: block;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 137px;
+    width: 33.3333%;
+  }
 `;
 
 export default class GMap extends React.Component {
