@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import breakpoints from '../UI/globals';
-import { Overlay } from '../UI/Section';
 import { Button, HideableButton } from './Buttons';
 import Content from './Content';
+import Dates from './Dates/';
 
 const Filters = styled.div`
   background: white;
@@ -42,7 +42,7 @@ export default function Homes() {
       <Main>
         <Filters>
           <div className="container">
-            <Button onClick={this.toggleCalendar}>Dates</Button>
+            <Dates />
             <Button>Guests</Button>
             <HideableButton>Room type</HideableButton>
             <HideableButton>Price</HideableButton>
