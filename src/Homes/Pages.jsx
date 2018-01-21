@@ -60,7 +60,7 @@ export default function Pages() {
   return (
     <Container>
       <div>
-        <Page to="/homes" current="true">
+        <Page to="/homes" current>
           1
         </Page>
         <Page to="#">2</Page>
