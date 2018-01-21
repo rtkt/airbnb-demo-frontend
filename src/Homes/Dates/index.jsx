@@ -2,6 +2,7 @@ import React from 'react';
 import { PortalWithState } from 'react-portal';
 import { Button } from '../Buttons';
 import Calendar from './Calendar';
+import { Overlay } from '../../UI/Section';
 
 class Dates extends React.Component {
   constructor(props) {
@@ -19,12 +20,14 @@ class Dates extends React.Component {
 
   render() {
     return (
-      <PortalWithState closeOnOutsideClick>
-        {({ openPortal, portal }) => [
-          <Button onClick={openPortal}>{this.state.buttonText}</Button>,
-          portal(<Calendar />),
-        ]}
-      </PortalWithState>
+      <React.Fragment>
+        <PortalWithState closeOnOutsideClick>
+          {({ openPortal, closePortal, portal }) => [
+            <Button onClick={openPortal}>{this.state.buttonText}</Button>,
+            portal(<React.Fragment><Overlay onClick={closePortal} /><Calendar /></React.Fragment>),
+          ]}
+        </PortalWithState>
+      </React.Fragment>
     );
   }
 }
