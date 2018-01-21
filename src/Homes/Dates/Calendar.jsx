@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import DayPicker, { DateUtils } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import Scrolllock from 'react-scrolllock';
+import MediaQuery from 'react-responsive';
 import breakpoints from '../../UI/globals';
 
 const Wrapper = styled.div`
@@ -56,7 +57,9 @@ class Calendar extends React.Component {
           modifiers={modifiers}
           pagedNavigation
         />
-        <Scrolllock />
+        <MediaQuery query="(min-width: ${breakpoints.md})">
+          <Scrolllock />
+        </MediaQuery>
       </Wrapper>
     );
   }
