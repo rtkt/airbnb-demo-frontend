@@ -21,10 +21,14 @@ const Wrapper = styled.div`
 class Calendar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.state = this.getInitialState();
+  }
+
+  getInitialState = () => {
+    return {
       from: undefined,
       to: undefined,
-    };
+    }
   }
 
   /* eslint-disable class-methods-use-this */
