@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import DayPicker from 'react-day-picker';
+import DayPicker, { DateUtils } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import Scrolllock from 'react-scrolllock';
 import breakpoints from '../../UI/globals';
@@ -38,10 +38,24 @@ class Calendar extends React.Component {
   }
   /* eslint-enable class-methods-use-this */
 
+  handleDayClick = day => {
+    const range = DateUtils.addDayToRange(day, this.state);
+    this.setState(range);
+  }
+
   render() {
+    const { from, to } = this.state;
+    const modifiers = { start: from, end: to };
     return (
       <Wrapper>
-        <DayPicker numberOfMonths={this.getMonthsNumber()} pagedNavigation />
+        <DayPicker
+          className="Selectable"
+          numberOfMonths={this.getMonthsNumber()}
+          selectedDays={[from, { from, to }]}
+          onDayClick={this.handleDayClick}
+          modifiers={modifiers}
+          pagedNavigation
+        />
         <Scrolllock />
       </Wrapper>
     );
