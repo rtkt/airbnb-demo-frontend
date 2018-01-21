@@ -27,6 +27,9 @@ const Footer = styled.footer`
   @media (min-width: ${breakpoints.md}) {
     margin-bottom: 24px;
   }
+  @media (min-width: ${breakpoints.lg}) {
+    margin-right: 33.3333%;
+  }
 `;
 
 const Main = styled.main`
@@ -52,7 +55,11 @@ export default function Homes() {
         </Filters>
         <Content />
       </Main>
-      <Footer>Enter dates to see full pricing. Additional fees apply. Taxes may be added</Footer>
+      <div className="container">
+        <Footer>
+          Enter dates to see full pricing. Additional fees apply. Taxes may be added
+        </Footer>
+      </div>
     </React.Fragment>
   );
 }
