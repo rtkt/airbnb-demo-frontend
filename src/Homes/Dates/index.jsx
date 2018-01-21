@@ -1,32 +1,30 @@
 import React from 'react';
-// import styled from 'styled-components';
+import { PortalWithState } from 'react-portal';
 import { Button } from '../Buttons';
-
-// const Container = styled.div`
-//   position: absolute;
-//   z-index: 7;
-// `;
+import Calendar from './Calendar';
 
 class Dates extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.initState();
-  }
-
-  /* eslint-disable class-methods-use-this */
-  initState() {
-    return {
+    this.state = {
       buttonText: 'Dates',
-      isOpen: false,
     };
   }
-  /* eslint-enable class-methods-use-this */
+
+  toggleCalendar = () => {
+    this.setState(prevState => ({
+      isOpen: !prevState.isOpen,
+    }));
+  };
 
   render() {
     return (
-      <React.Fragment>
-        <Button>{this.state.buttonText}</Button>
-      </React.Fragment>
+      <PortalWithState closeOnOutsideClick>
+        {({ openPortal, portal }) => [
+          <Button onClick={openPortal}>{this.state.buttonText}</Button>,
+          portal(<Calendar />),
+        ]}
+      </PortalWithState>
     );
   }
 }
