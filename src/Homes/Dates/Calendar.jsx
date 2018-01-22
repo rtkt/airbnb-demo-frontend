@@ -43,7 +43,7 @@ class Calendar extends React.Component {
   /* eslint-enable class-methods-use-this */
 
   apply = () => {
-    this.props.dates({ from: this.state.from, to: this.state.to });
+    this.props.onDatesChange({ from: this.state.from, to: this.state.to });
     this.props.closePortal();
   };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { PortalWithState } from 'react-portal';
+import moment from 'moment';
 import { Button } from '../Buttons';
 import Calendar from './Calendar';
 import { Overlay } from '../../UI/Section';
@@ -14,11 +15,16 @@ class Dates extends React.Component {
     };
   }
 
-  getDates = (range) => {
+  onDatesChange = (range) => {
     this.setState({
+      buttonText: this.setButtonText(range),
       from: range.from,
       to: range.to,
     });
+  };
+
+  setButtonText = (range) => {
+    return `${moment(range.from).format('Do MMM')} — ${moment(range.to).format('Do MMM')}`;
   };
 
   render() {
@@ -30,7 +36,7 @@ class Dates extends React.Component {
             portal(
               <React.Fragment>
                 <Overlay onClick={closePortal} />
-                <Calendar closePortal={closePortal} dates={this.getDates} />
+                <Calendar closePortal={closePortal} onDatesChange={this.onDatesChange} />
               </React.Fragment>,
             ),
           ]}
