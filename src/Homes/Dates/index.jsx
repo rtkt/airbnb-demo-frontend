@@ -8,12 +8,18 @@ import { Overlay } from '../../UI/Section';
 class Dates extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      buttonText: 'Dates',
-      from: undefined,
-      to: undefined,
-    };
+    this.state = this.getInitialState();
   }
+
+  getInitialState = () => ({
+    buttonText: 'Dates',
+    from: undefined,
+    to: undefined,
+  });
+
+  onCancel = () => {
+    this.setState(this.getInitialState());
+  };
 
   onDatesChange = (range) => {
     this.setState({
@@ -23,9 +29,8 @@ class Dates extends React.Component {
     });
   };
 
-  setButtonText = (range) => {
-    return `${moment(range.from).format('Do MMM')} — ${moment(range.to).format('Do MMM')}`;
-  };
+  setButtonText = range =>
+    `${moment(range.from).format('Do MMM')} — ${moment(range.to).format('Do MMM')}`;
 
   render() {
     return (
@@ -33,11 +38,17 @@ class Dates extends React.Component {
         <PortalWithState closeOnOutsideClick>
           {({ openPortal, closePortal, portal }) => [
             <Button onClick={openPortal}>{this.state.buttonText}</Button>,
-            portal(
+            portal (
               <React.Fragment>
                 <Overlay onClick={closePortal} />
-                <Calendar closePortal={closePortal} onDatesChange={this.onDatesChange} />
-              </React.Fragment>,
+                <Calendar
+                  closePortal={closePortal}
+                  from={this.state.from}
+                  onCancel={this.onCancel}
+                  onDatesChange={this.onDatesChange}
+                  to={this.state.to}
+                  />
+              </React.Fragment>
             ),
           ]}
         </PortalWithState>

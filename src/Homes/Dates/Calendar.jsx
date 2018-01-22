@@ -22,13 +22,11 @@ const Wrapper = styled.div`
 class Calendar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.getInitialState();
+    this.state = {
+      from: this.props.from,
+      to: this.props.to,
+    };
   }
-
-  getInitialState = () => ({
-    from: undefined,
-    to: undefined,
-  });
 
   /* eslint-disable class-methods-use-this */
   getMonthsNumber() {
@@ -43,17 +41,20 @@ class Calendar extends React.Component {
   /* eslint-enable class-methods-use-this */
 
   apply = () => {
-    this.props.onDatesChange({ from: this.state.from, to: this.state.to });
     this.props.closePortal();
   };
 
   cancel = () => {
+    this.props.onCancel();
     this.props.closePortal();
   };
 
   handleDayClick = (day) => {
     const range = DateUtils.addDayToRange(day, this.state);
     this.setState(range);
+    if (range.from && range.to) {
+      this.props.onDatesChange(range);
+    }
   };
 
   render() {
