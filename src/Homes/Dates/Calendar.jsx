@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import DayPicker, { DateUtils } from 'react-day-picker';
-import 'react-day-picker/lib/style.css';
 import Scrolllock from 'react-scrolllock';
 import MediaQuery from 'react-responsive';
+import './Calendar.css';
 import breakpoints from '../../UI/globals';
 import { Apply, Bottom, Cancel } from './Buttons';
 
@@ -19,42 +19,34 @@ const Wrapper = styled.div`
   z-index: 20;
 `;
 
-class Calendar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      from: this.props.from,
-      to: this.props.to,
-    };
+const getMonthsNumber = () => {
+  const mm = window.matchMedia;
+  if (mm(`(min-width: ${breakpoints.lg})`).matches) {
+    return 2;
+  } else if (mm(`(min-width: ${breakpoints.md})`).matches) {
+    return 1;
   }
+  return 12;
+};
 
-  /* eslint-disable class-methods-use-this */
-  getMonthsNumber() {
-    const mm = window.matchMedia;
-    if (mm(`(min-width: ${breakpoints.lg})`).matches) {
-      return 2;
-    } else if (mm(`(min-width: ${breakpoints.md})`).matches) {
-      return 1;
-    }
-    return 12;
-  }
-  /* eslint-enable class-methods-use-this */
+export default class Calendar extends React.Component {
+  state = {
+    from: this.props.from,
+    to: this.props.to,
+  };
 
   apply = () => {
+    this.props.onDatesChange(this.state);
     this.props.closePortal();
   };
 
   cancel = () => {
-    this.props.onCancel();
     this.props.closePortal();
   };
 
   handleDayClick = (day) => {
     const range = DateUtils.addDayToRange(day, this.state);
     this.setState(range);
-    if (range.from && range.to) {
-      this.props.onDatesChange(range);
-    }
   };
 
   render() {
@@ -65,7 +57,7 @@ class Calendar extends React.Component {
       <Wrapper>
         <DayPicker
           className="Selectable"
-          numberOfMonths={this.getMonthsNumber()}
+          numberOfMonths={getMonthsNumber()}
           selectedDays={[from, { from, to }]}
           onDayClick={this.handleDayClick}
           modifiers={modifiers}
@@ -82,5 +74,3 @@ class Calendar extends React.Component {
     );
   }
 }
-
-export default Calendar;
