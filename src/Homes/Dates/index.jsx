@@ -9,13 +9,16 @@ class Dates extends React.Component {
     super(props);
     this.state = {
       buttonText: 'Dates',
+      from: undefined,
+      to: undefined,
     };
   }
 
-  toggleCalendar = () => {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen,
-    }));
+  getDates = (range) => {
+    this.setState({
+      from: range.from,
+      to: range.to,
+    });
   };
 
   render() {
@@ -24,7 +27,12 @@ class Dates extends React.Component {
         <PortalWithState closeOnOutsideClick>
           {({ openPortal, closePortal, portal }) => [
             <Button onClick={openPortal}>{this.state.buttonText}</Button>,
-            portal(<React.Fragment><Overlay onClick={closePortal} /><Calendar /></React.Fragment>),
+            portal(
+              <React.Fragment>
+                <Overlay onClick={closePortal} />
+                <Calendar closePortal={closePortal} dates={this.getDates} />
+              </React.Fragment>,
+            ),
           ]}
         </PortalWithState>
       </React.Fragment>

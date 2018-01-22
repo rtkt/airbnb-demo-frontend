@@ -5,6 +5,7 @@ import 'react-day-picker/lib/style.css';
 import Scrolllock from 'react-scrolllock';
 import MediaQuery from 'react-responsive';
 import breakpoints from '../../UI/globals';
+import { Apply, Bottom, Cancel } from './Buttons';
 
 const Wrapper = styled.div`
   background: white;
@@ -24,12 +25,10 @@ class Calendar extends React.Component {
     this.state = this.getInitialState();
   }
 
-  getInitialState = () => {
-    return {
-      from: undefined,
-      to: undefined,
-    }
-  }
+  getInitialState = () => ({
+    from: undefined,
+    to: undefined,
+  });
 
   /* eslint-disable class-methods-use-this */
   getMonthsNumber() {
@@ -43,14 +42,24 @@ class Calendar extends React.Component {
   }
   /* eslint-enable class-methods-use-this */
 
-  handleDayClick = day => {
+  apply = () => {
+    this.props.dates({ from: this.state.from, to: this.state.to });
+    this.props.closePortal();
+  };
+
+  cancel = () => {
+    this.props.closePortal();
+  };
+
+  handleDayClick = (day) => {
     const range = DateUtils.addDayToRange(day, this.state);
     this.setState(range);
-  }
+  };
 
   render() {
     const { from, to } = this.state;
     const modifiers = { start: from, end: to };
+    const mdSizeQuery = `(min-width: ${breakpoints.md})`;
     return (
       <Wrapper>
         <DayPicker
@@ -61,7 +70,11 @@ class Calendar extends React.Component {
           modifiers={modifiers}
           pagedNavigation
         />
-        <MediaQuery query="(min-width: ${breakpoints.md})">
+        <Bottom>
+          <Cancel onClick={this.cancel}>Cancel</Cancel>
+          <Apply onClick={this.apply}>Apply</Apply>
+        </Bottom>
+        <MediaQuery query={mdSizeQuery}>
           <Scrolllock />
         </MediaQuery>
       </Wrapper>
