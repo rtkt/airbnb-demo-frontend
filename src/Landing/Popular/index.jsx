@@ -1,15 +1,15 @@
 import React from 'react';
-import Card from './PopularCard';
-import { Heading, Section, Slider, SliderButton } from '../lib/Section';
-import popularPhoto1 from '../imgs/popular-1.png';
-import popularPhoto2 from '../imgs/popular-2.png';
-import popularPhoto3 from '../imgs/popular-3.png';
-import popularPhoto4 from '../imgs/popular-4.png';
+import Card from './Card';
+import { Section, SectionHead, Slider, SliderButton } from '../../UI/Section';
+import popularPhoto1 from './popular-1.png';
+import popularPhoto2 from './popular-2.png';
+import popularPhoto3 from './popular-3.png';
+import popularPhoto4 from './popular-4.png';
 
-function Popular() {
+export default function Popular() {
   return (
     <Section>
-      <Heading text="Popular reservations around the world" />
+      <SectionHead to="#" title="Popular reservations around the world" />
       <Slider className="row">
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
@@ -56,5 +56,3 @@ function Popular() {
     </Section>
   );
 }
-
-export default Popular;

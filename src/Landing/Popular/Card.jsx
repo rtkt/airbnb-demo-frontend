@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Img, VerticalContainer as Container } from '../lib/Card';
+import breakpoints from '../../UI/globals';
+import { Img, VerticalContainer as Container } from '../../UI/Card';
 
 const Place = styled.span`
   font-size: 8px;
@@ -8,7 +9,7 @@ const Place = styled.span`
   margin-top: 6px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 10px;
     margin-top: 11px;
   }
@@ -20,7 +21,7 @@ const Title = styled.span`
   margin-bottom: 4px;
   margin-top: 1px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 18px;
   }
 `;
@@ -30,12 +31,12 @@ const Price = styled.span`
   font-weight: 200;
   opacity: 0.9;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 18px;
   }
 `;
 
-function Card(props) {
+export default function Card(props) {
   return (
     <Container href={props.href} title={props.title}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -45,5 +46,3 @@ function Card(props) {
     </Container>
   );
 }
-
-export default Card;

@@ -1,15 +1,15 @@
 import React from 'react';
-import Card from './ExperienceCard';
-import { Heading, Section, Slider, SliderButton } from '../lib/Section';
-import photo1 from '../imgs/experience-1.png';
-import photo2 from '../imgs/experience-2.png';
-import photo3 from '../imgs/experience-3.png';
-import photo4 from '../imgs/experience-4.png';
+import Card from './Card';
+import { Section, SectionHead, Slider, SliderButton } from '../../UI/Section';
+import photo1 from './experience-1.png';
+import photo2 from './experience-2.png';
+import photo3 from './experience-3.png';
+import photo4 from './experience-4.png';
 
-function Experiences() {
+export default function Experiences() {
   return (
     <Section>
-      <Heading text="Experiences" />
+      <SectionHead to="#" title="Experiences" />
       <Slider className="row">
         <div className="col-xs-6 col-md-4 col-lg-3">
           <Card
@@ -56,5 +56,3 @@ function Experiences() {
     </Section>
   );
 }
-
-export default Experiences;

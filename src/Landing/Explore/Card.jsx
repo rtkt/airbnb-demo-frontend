@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoints from '../../UI/globals';
 
 const Link = styled.a`
   flex-direction: flex-start;
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  text-decoration: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     flex-direction: row;
   }
 `;
@@ -16,7 +16,7 @@ const Link = styled.a`
 const Img = styled.img`
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     width: 96px;
   }
 `;
@@ -34,14 +34,14 @@ const Text = styled.span`
   margin-left: 12px;
   margin-top: 18px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 17px;
     margin: 0;
     margin-left: 24px;
   }
 `;
 
-function Card(props) {
+export default function Card(props) {
   return (
     <Container>
       <Link className="middle-md" href={props.href} title={props.alt}>
@@ -51,5 +51,3 @@ function Card(props) {
     </Container>
   );
 }
-
-export default Card;

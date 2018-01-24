@@ -26,7 +26,6 @@ body {
 
 body,
 :link,
-:hover,
 :visited {
   color: #383838;
   text-decoration: none;

@@ -1,14 +1,19 @@
 import React from 'react';
-import Card from './HomeCard';
-import { Heading, Section, Slider, SliderButton } from '../lib/Section';
-import photo1 from '../imgs/home-1.png';
-import photo2 from '../imgs/home-2.png';
-import photo3 from '../imgs/home-3.png';
+import Card from '../../Homes/Card';
+import {
+  Section,
+  SectionHead,
+  Slider,
+  SliderButton,
+} from '../../UI/Section';
+import photo1 from '../../Homes/home-1.png';
+import photo2 from '../../Homes/home-2.png';
+import photo3 from '../../Homes/home-3.png';
 
-function Homes() {
+export default function Homes() {
   return (
     <Section>
-      <Heading text="Homes" />
+      <SectionHead to="/homes" title="Homes" />
       <Slider className="row">
         <div className="col-xs-7 col-md-5 col-lg-4">
           <Card
@@ -48,5 +53,3 @@ function Homes() {
     </Section>
   );
 }
-
-export default Homes;

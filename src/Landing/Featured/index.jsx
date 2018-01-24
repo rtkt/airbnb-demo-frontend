@@ -1,20 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H1, Section, Slider, SliderButton } from '../lib/Section';
-import { VerticalContainer as Container, Img } from '../lib/Card';
-import photo1 from '../imgs/featured-1.png';
-import photo2 from '../imgs/featured-2.png';
-import photo3 from '../imgs/featured-3.png';
-import photo4 from '../imgs/featured-4.png';
-import photo5 from '../imgs/featured-5.png';
-import photo6 from '../imgs/featured-6.png';
+import { H1, Section, Slider, SliderButton } from '../../UI/Section';
+import { VerticalContainer as Container, Img } from '../../UI/Card';
+import breakpoints from '../../UI/globals';
+import photo1 from './featured-1.png';
+import photo2 from './featured-2.png';
+import photo3 from './featured-3.png';
+import photo4 from './featured-4.png';
+import photo5 from './featured-5.png';
+import photo6 from './featured-6.png';
 
 const Title = styled.span`
   font-size: 12px;
   font-weight: bold;
   margin-top: 3px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 15px;
     margin-top: 7px;
   }
@@ -29,7 +30,7 @@ function Card(props) {
   );
 }
 
-function Featured() {
+export default function Featured() {
   return (
     <Section>
       <H1>Featured destinations</H1>
@@ -57,5 +58,3 @@ function Featured() {
     </Section>
   );
 }
-
-export default Featured;

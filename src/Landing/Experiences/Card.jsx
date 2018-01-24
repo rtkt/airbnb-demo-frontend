@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } from '../lib/Card';
-import star from '../imgs/star.svg';
+import { Img, Price, Reviews, Rating, Star, VerticalContainer as Container } from '../../UI/Card';
+import breakpoints from '../../UI/globals';
+import star from '../../UI/star.svg';
 
 const Name = styled.span`
   font-size: 13px;
@@ -9,12 +10,12 @@ const Name = styled.span`
   margin-bottom: 5px;
   margin-top: 7px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     font-size: 15px;
   }
 `;
 
-function Card(props) {
+export default function Card(props) {
   return (
     <Container href={props.href} title={props.alt}>
       <Img src={props.img} alt={props.alt} title={props.alt} />
@@ -33,5 +34,3 @@ function Card(props) {
     </Container>
   );
 }
-
-export default Card;

@@ -1,0 +1,145 @@
+.DayPicker {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-top: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.DayPicker-wrapper {
+  flex-direction: row;
+  position: relative;
+  user-select: none;
+}
+
+.DayPicker-Months {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.DayPicker-Month {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-top: 4px;
+  user-select: none;
+}
+
+.DayPicker-NavBar {
+}
+
+.DayPicker-NavButton {
+  background: #ffffff;
+  background-image: url('./arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 10px;
+  border: 1px solid rgba(118, 118, 118, 0.3);
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.DayPicker-NavButton:hover {
+  opacity: 0.8;
+}
+
+.DayPicker-NavButton--prev {
+  left: 18px;
+}
+
+.DayPicker-NavButton--next {
+  right: 18px;
+  transform: rotate(180deg);
+}
+
+.DayPicker-NavButton--interactionDisabled {
+  display: none;
+}
+
+.DayPicker-Caption {
+  display: table-caption;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+.DayPicker-Weekdays {
+  display: table-header-group;
+}
+
+.DayPicker-WeekdaysRow {
+  display: table-row;
+}
+
+.DayPicker-Weekday {
+  color: #636363;
+  display: table-cell;
+  font-size: 12px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+.DayPicker-Weekday abbr[title] {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.DayPicker-Body {
+  display: table-row-group;
+}
+
+.DayPicker-Week {
+  display: table-row;
+}
+
+.DayPicker-Day {
+  border: 1px solid #d5d5d5;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: table-cell;
+  height: 40px;
+  font-size: 14px;
+  padding: 0;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.DayPicker--interactionDisabled .DayPicker-Day {
+  cursor: default;
+}
+
+.DayPicker-Day--outside {
+  border: none;
+  cursor: default;
+  color: #cbcbcb;
+}
+
+.DayPicker-Day--disabled {
+  color: #dce0e0;
+  cursor: default;
+  /* background-color: #eff1f1; */
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  background: rgba(0, 132, 137, 0.1);
+  border: 1px solid #9cd9d9;
+}
+
+.DayPicker-Day--start:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside),
+.DayPicker-Day--end:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  background: #008489;
+  border: 1px solid #008489;
+  color: white;
+}
