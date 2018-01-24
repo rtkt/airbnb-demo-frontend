@@ -27,7 +27,8 @@ const getMonthsNumber = () => {
   const mm = window.matchMedia;
   if (mm(`(min-width: ${breakpoints.lg})`).matches) {
     return 2;
-  } else if (mm(`(min-width: ${breakpoints.md})`).matches) {
+  }
+  if (mm(`(min-width: ${breakpoints.md})`).matches) {
     return 1;
   }
   return 12;
